@@ -1,0 +1,13 @@
+body{
+    background-color: #FCEEE3;
+    font-family: 'Poppins';
+}
+
+#Titre_encadrement{
+    background-color: #C1D5DB
+}
+
+.fond_encadrement{
+    height: 60px; 
+    background-color: #658DA7
+}
