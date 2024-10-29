@@ -3,15 +3,26 @@
   --card-bg: #c1d5db;
   --button-bg: #658da7;
   --overlay-bg: #d9d9d9;
+  --shadow: #000000;
 }
+
+a {
+  text-decoration: none;
+  color:  var(--shadow);
+}
+
+/* ----------- nav, responsve ---------- */
+
+.not-flex-grow{
+  flex-grow: 0 !important;
+}
+
 
 body {
   font-family: poppins;
+  background-color: #FCEEE3;
 }
-h1,h2,h3,h4,h5,h6{
-  /* perguntar sobre isso o tamanho da fonte  */
-  font-size; 
-}
+
 /* ----------- borders ---------- */
 .border-danger {
   border: solid var(--line-bg) !important;
@@ -36,3 +47,28 @@ h1,h2,h3,h4,h5,h6{
 .overlay-bg {
   background-color: var(--overlay-bg) !important;
 }
+
+/* ----------- hovers ---------- */
+
+
+.button-hover:hover {
+  letter-spacing: 0.3rem !important;
+  border: solid var(--line-bg) !important;
+  text-decoration: underline;
+}
+
+.shadow:hover {
+  box-shadow: 0px 0px 10px 0px var(--shadow) !important;
+}
+
+.card-hover:hover {
+  box-shadow: 0px 0px 10px 0px var(--shadow) !important;
+  cursor: pointer;
+}
+.hover-link:hover {
+  text-decoration: underline;
+  color: var(--line-bg);
+  letter-spacing: 0.3rem !important;
+}
+
+/* ---------------------- */

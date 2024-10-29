@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- header/nav -->
+    <!-- header / nav -->
     <header class="mb-3">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -83,7 +83,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="modal-footer  border_t"></div>
+                <div class="modal-footer border_t"></div>
               </div>
             </div>
           </div>
@@ -129,18 +129,38 @@
                   <a href="">Créer à partir du modèle</a>
                   <p>Commencez plus rapidement avec un modèle de tableau.</p>
                 </div>
-                <div class="modal-footer  border_t"></div>
+                <div class="modal-footer border_t"></div>
               </div>
             </div>
+          </div>
+          <!-- search bar lg and md -->
+          <div
+            class="collapse navbar-collapse not-flex-grow"
+            id="navbarSupportedContent"
+          >
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn-primary text-dark border border-black rounded-1"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
           </div>
           <div class="d-flex gap-2">
             <!-- search button -->
             <button
-              class="btn btn-primary text-dark border border-black"
+              class="btn btn-primary text-dark border border-black d-md-none d-lg-none"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
+              data-bs-target="#navbarSupportedContentmobile"
+              aria-controls="navbarSupportedContentmobile"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
@@ -190,7 +210,7 @@
             <!-- Button profile -->
             <button
               type="button"
-              class="btn btn-primary text-dark border border-black"
+              class="btn btn-primary text-dark border border-black size"
               data-bs-toggle="modal"
               data-bs-target="#button_profile"
             >
@@ -216,9 +236,6 @@
                     ></button>
                   </div>
                   <div class="modal-body">
-                    <hr
-                      class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-1"
-                    />
                     <div class="row">
                       <div class="col-3 text-center">
                         <i class="bi bi-person-circle"></i>
@@ -232,8 +249,8 @@
                     </div>
                     <div>
                       <ul>
-                        <li><a href="#">Changer le compte</a></li>
-                        <li><a href="#">Gérer le compte</a></li>
+                        <li><a  class="hover-link" href="#">Changer le compte</a></li>
+                        <li><a  class="hover-link" href="#">Gérer le compte</a></li>
                       </ul>
                     </div>
                     <hr
@@ -241,17 +258,17 @@
                     />
                     <div class="mt-2">
                       <ul>
-                        <li><a href="#">Profil et visibilité</a></li>
-                        <li><a href="#">Activité</a></li>
-                        <li><a href="#">Cartes</a></li>
-                        <li><a href="#">Réglages</a></li>
-                        <li><a href="#">Thème</a></li>
+                        <li><a  class="hover-link" href="#">Profil et visibilité</a></li>
+                        <li><a  class="hover-link" href="#">Activité</a></li>
+                        <li><a  class="hover-link" href="#">Cartes</a></li>
+                        <li><a  class="hover-link" href="#">Réglages</a></li>
+                        <li><a  class="hover-link" href="#">Thème</a></li>
                       </ul>
                     </div>
                     <hr
                       class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-1"
                     />
-                    <a href="#"
+                    <a class="hover-link" href="#"
                       ><i class="bi bi-people-fill mt-3 mb-3"></i> Créer un
                       espace de travail</a
                     >
@@ -268,26 +285,28 @@
               </div>
             </div>
           </div>
-
-          <!-- search bar -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button
-                class="btn-primary text-dark border border-black rounded-1"
-                type="submit"
-              >
-                Search
-              </button>
-            </form>
-          </div>
         </div>
       </nav>
+        <!-- search bar mobile -->
+        <div
+        class="collapse navbar-collapse not-flex-grow mt-3"
+        id="navbarSupportedContentmobile"
+      >
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button
+            class="btn-primary text-dark border border-black rounded-1"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </div>
     </header>
     <!-- main -->
     <main class="container">
@@ -297,17 +316,17 @@
           <h3 class="col-12">
             <i class="bi bi-alarm"></i> Réssemments consulté
           </h3>
-          <div class="row">
-            <div class="row row-cols-2 g-1">
-              <div class="col-6">
-                <div class="card m-2">
+          <div class="row ">
+            <div class="row row-cols-2 g-2">
+              <div class="col-6 g-2">
+                <div class="card text-bg-dark m-2 card-hover ">
                   <img
                     src="./projet_1.png"
                     class="card-img"
                     alt="image projet 1"
                   />
                 </div>
-                <div class="card text-bg-dark m-2">
+                <div class="card text-bg-dark m-2 card-hover">
                   <img
                     src="./projet_1.png"
                     class="card-img"
@@ -316,14 +335,14 @@
                 </div>
               </div>
               <div class="col-6">
-                <div class="card text-bg-dark m-2">
+                <div class="card text-bg-dark m-2 card-hover">
                   <img
                     src="./projet_1.png"
                     class="card-img"
                     alt="image projet 1"
                   />
                 </div>
-                <div class="card text-bg-dark m-2">
+                <div class="card text-bg-dark m-2 card-hover">
                   <img
                     src="./projet_1.png"
                     class="card-img"
@@ -348,24 +367,36 @@
             <div class="row row-cols-2 g-1">
               <div class="col-6">
                 <div class="m-2">
-                  <button type="button" class="rounded-4 p-2 w-100 btn-primary">
+                  <button
+                    type="button"
+                    class="rounded-4 p-2 w-100 btn-primary button-hover"
+                  >
                     <i class="bi bi-people-fill"></i> Membres
                   </button>
                 </div>
                 <div class="m-2">
-                  <button type="button" class="rounded-4 p-2 w-100 btn-primary">
+                  <button
+                    type="button"
+                    class="rounded-4 p-2 w-100 btn-primary button-hover"
+                  >
                     <i class="bi bi-gear"></i> Réglages
                   </button>
                 </div>
               </div>
               <div class="col-6">
                 <div class="m-2">
-                  <button type="button" class="rounded-4 p-2 w-100 btn-primary">
+                  <button
+                    type="button"
+                    class="rounded-4 p-2 w-100 btn-primary button-hover"
+                  >
                     <i class="bi bi-eye"></i> Vues
                   </button>
                 </div>
                 <div class="m-2">
-                  <button type="button" class="rounded-4 p-2 w-100 btn-primary">
+                  <button
+                    type="button"
+                    class="rounded-4 p-2 w-100 btn-primary button-hover"
+                  >
                     <i class="bi bi-border-all"></i> Mise à niveau
                   </button>
                 </div>
@@ -373,7 +404,10 @@
             </div>
           </div>
           <div>
-            <button type="button" class="rounded-4 p-5 w-100 bg-body-tertiary">
+            <button
+              type="button"
+              class="rounded-4 p-5 w-100 bg-body-tertiary shadow"
+            >
               Créer un nouveau tableau
             </button>
           </div>
@@ -391,14 +425,14 @@
           <div class="row">
             <div class="row row-cols-2 g-1">
               <div class="col-6">
-                <div class="card m-2">
+                <div class="card text-bg-dark m-2 card-hover">
                   <img
                     src="./projet_1.png"
                     class="card-img"
                     alt="image projet 1"
                   />
                 </div>
-                <div class="card text-bg-dark m-2">
+                <div class="card text-bg-dark m-2 card-hover">
                   <img
                     src="./projet_1.png"
                     class="card-img"
@@ -407,14 +441,14 @@
                 </div>
               </div>
               <div class="col-6">
-                <div class="card text-bg-dark m-2">
+                <div class="card text-bg-dark m-2 card-hover">
                   <img
                     src="./projet_1.png"
                     class="card-img"
                     alt="image projet 1"
                   />
                 </div>
-                <div class="card text-bg-dark m-2">
+                <div class="card text-bg-dark m-2 card-hover">
                   <img
                     src="./projet_1.png"
                     class="card-img"
@@ -440,7 +474,7 @@
           <h4><i class="bi bi-people-fill"></i> Espace de travail logo</h4>
         </div>
         <div class="col-6">
-          <div class="card text-bg-dark m-2">
+          <div class="card text-bg-dark m-2 card-hover">
             <img src="./projet_1.png" class="card-img" alt="image projet 1" />
           </div>
         </div>
@@ -448,7 +482,7 @@
           <!-- Button projet fermes -->
           <button
             type="button"
-            class="btn bg-body-tertiary text-dark border border-black mt-4"
+            class="btn bg-body-tertiary text-dark border border-black mt-4 button-hover"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
@@ -476,9 +510,9 @@
                     aria-label="Close"
                   ></button>
                 </div>
-                <div class="modal-body">
-                  <div class="col-6">
-                    <div class="card text-bg-dark m-2">
+                <div class="row justify-content-center modal-body">
+                  <div class="col-8">
+                    <div class="card text-bg-dark m-2 card-hover">
                       <img
                         src="./projet_1.png"
                         class="card-img"
@@ -486,8 +520,8 @@
                       />
                     </div>
                   </div>
-                  <div class="col-6">
-                    <div class="card text-bg-dark m-2">
+                  <div class="col-8">
+                    <div class="card text-bg-dark m-2 card-hover">
                       <img
                         src="./projet_1.png"
                         class="card-img"
@@ -495,8 +529,8 @@
                       />
                     </div>
                   </div>
-                  <div class="col-6">
-                    <div class="card text-bg-dark m-2">
+                  <div class="col-8">
+                    <div class="card text-bg-dark m-2 card-hover">
                       <img
                         src="./projet_1.png"
                         class="card-img"
@@ -504,8 +538,8 @@
                       />
                     </div>
                   </div>
-                  <div class="col-6">
-                    <div class="card text-bg-dark m-2">
+                  <div class="col-8">
+                    <div class="card text-bg-dark m-2 card-hover">
                       <img
                         src="./projet_1.png"
                         class="card-img"
@@ -513,8 +547,8 @@
                       />
                     </div>
                   </div>
-                  <div class="col-6">
-                    <div class="card text-bg-dark m-2">
+                  <div class="col-8">
+                    <div class="card text-bg-dark m-2 card-hover">
                       <img
                         src="./projet_1.png"
                         class="card-img"
@@ -523,7 +557,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="modal-footer  border_t "></div>
+                <div class="modal-footer border_t"></div>
               </div>
             </div>
           </div>
