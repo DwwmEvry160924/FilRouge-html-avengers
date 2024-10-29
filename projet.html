@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TEAM BOOST</title>
+    <title>Projet</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,10 +15,9 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="homePage.css" />
+    <link rel="stylesheet" href="projet.css">
   </head>
   <body>
-    <!-- header / nav -->
-     <!-- pergunta, como nao deixar os overlay voltar para o topo????? -->
     <header class="mb-3">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -64,7 +63,7 @@
                 </div>
                 <div class="modal-body">
                   <ul>
-                    <li >
+                    <li>
                       <a class="hover-link" href="#espaceTtravil"
                         >Espace de travail <i class="bi bi-arrow-right"></i
                       ></a>
@@ -80,7 +79,10 @@
                       ></a>
                     </li>
                     <li>
-                      <a class="hover-link" href="#espaceTtravilInvites">Espaces de Travail d'invites <i class="bi bi-arrow-right"></i></a>
+                      <a class="hover-link" href="#espaceTtravilInvites"
+                        >Espaces de Travail d'invites
+                        <i class="bi bi-arrow-right"></i
+                      ></a>
                     </li>
                   </ul>
                 </div>
@@ -121,13 +123,17 @@
                   ></button>
                 </div>
                 <div class="modal-body">
-                  <a class="hover-link "  href="#">Creer un tableau <i class="bi bi-arrow-right"></i></a>
+                  <a class="hover-link" href="#"
+                    >Creer un tableau <i class="bi bi-arrow-right"></i
+                  ></a>
                   <p>
                     Un tableau est composé de cartes triées sur des listes.
                     Utilisez-le pour gérer des projets, suivre les informations
                     ou organiser quoi que ce soit.
                   </p>
-                  <a class="hover-link " href="">Créer à partir du modèle <i class="bi bi-arrow-right"></i></a>
+                  <a class="hover-link" href=""
+                    >Créer à partir du modèle <i class="bi bi-arrow-right"></i
+                  ></a>
                   <p>Commencez plus rapidement avec un modèle de tableau.</p>
                 </div>
                 <div class="modal-footer border_t"></div>
@@ -238,8 +244,8 @@
                   </div>
                   <div class="modal-body">
                     <div class="row">
-                      <a  class="col-3" href="./connexion.html">
-                        <div class=" text-center">
+                      <a class="col-3" href="./connexion.html">
+                        <div class="text-center">
                           <i class="bi bi-person-circle"></i>
                         </div>
                       </a>
@@ -256,7 +262,9 @@
                           <a class="hover-link" href="#">Changer le compte</a>
                         </li>
                         <li>
-                          <a class="hover-link" href="./Gerercompte.html">Gérer le compte</a>
+                          <a class="hover-link" href="./Gerercompte.html"
+                            >Gérer le compte</a
+                          >
                         </li>
                       </ul>
                     </div>
@@ -272,7 +280,11 @@
                         </li>
                         <li><a class="hover-link" href="#">Activité</a></li>
                         <li><a class="hover-link" href="#">Cartes</a></li>
-                        <li><a class="hover-link" href="./condiutili.html">Conditions d'Utilisation</a></li>
+                        <li>
+                          <a class="hover-link" href="./condiutili.html"
+                            >Conditions d'Utilisation</a
+                          >
+                        </li>
                         <li><a class="hover-link" href="#">Thème</a></li>
                       </ul>
                     </div>
@@ -319,267 +331,38 @@
         </form>
       </div>
     </header>
-    <!-- main -->
     <main class="container">
-      <!-- Réssemments consulté -->
-      <section class="row container-fluid">
-        <div class="col-12">
-          <h3 class="col-12">
-            <i id="resseConsult" class="bi bi-alarm"></i> Réssemments consulté
-          </h3>
-          <div class="row">
-            <div class="row row-cols-2 g-2">
-              <div class="col-6 g-2">
-                <div class="card text-bg-dark m-2 mb-4 card-hover">
-                  <img
-                    src="./projet_1.png"
-                    class="card-img"
-                    alt="image projet 1"
-                  />
-                </div>
-                <div class="card text-bg-dark m-2 card-hover">
-                  <img
-                    src="./projet_1.png"
-                    class="card-img"
-                    alt="image projet 1"
-                  />
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="card text-bg-dark m-2 mb-4 card-hover">
-                  <img
-                    src="./projet_1.png"
-                    class="card-img"
-                    alt="image projet 1"
-                  />
-                </div>
-                <div class="card text-bg-dark m-2 card-hover">
-                  <img
-                    src="./projet_1.png"
-                    class="card-img"
-                    alt="image projet 1"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr
-        class="border border-danger rounded-1 border-4 opacity-100 mt-4 mb-4"
-      />
-      <!-- Vos espaces de travail -->
-      <section>
-        <div class="col-12">
-          <h3 class="col-12">
-            <i id="espaceTtravil" class="bi bi-briefcase-fill"></i> Vos espaces de travail
-          </h3>
-          <div class="row">
-            <div class="row row-cols-2 g-1">
-              <div class="col-6">
-                <div class="m-2">
-                  <button
-                    type="button"
-                    class="rounded-4 p-2 w-100 btn-primary button-hover"
-                  >
-                    <i class="bi bi-people-fill"></i> Membres
-                  </button>
-                </div>
-                <div class="m-2">
-                  <button
-                    type="button"
-                    class="rounded-4 p-2 w-100 btn-primary button-hover"
-                  >
-                    <i class="bi bi-gear"></i> Réglages
-                  </button>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="m-2">
-                  <button
-                    type="button"
-                    class="rounded-4 p-2 w-100 btn-primary button-hover"
-                  >
-                    <i class="bi bi-eye"></i> Vues
-                  </button>
-                </div>
-                <div class="m-2">
-                  <button
-                    type="button"
-                    class="rounded-4 p-2 w-100 btn-primary button-hover"
-                  >
-                    <i class="bi bi-border-all"></i> Mise à niveau
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <button
-              type="button"
-              class="rounded-4 p-5 w-100 bg-body-tertiary shadow"
-            >
-              Créer un nouveau tableau
-            </button>
-          </div>
-        </div>
-      </section>
-      <hr
-        class="border border-danger rounded-1 border-4 opacity-100 mt-4 mb-4"
-      />
-      <!-- modeles plus populaires -->
-      <section class="row container-fluid">
-        <div class="col-12">
-          <h3 class="col-12">
-            <i id="TableauxFavoris" class="bi bi-archive"></i> Tableaux favoris
-          </h3>
-          <div class="row">
-            <div class="row row-cols-2 g-1">
-              <div class="col-6">
-                <div class="card text-bg-dark m-2 mb-4 card-hover">
-                  <img
-                    src="./projet_1.png"
-                    class="card-img"
-                    alt="image projet 1"
-                  />
-                </div>
-                <div class="card text-bg-dark m-2 card-hover">
-                  <img
-                    src="./projet_1.png"
-                    class="card-img"
-                    alt="image projet 1"
-                  />
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="card text-bg-dark m-2  mb-4 card-hover">
-                  <img
-                    src="./projet_1.png"
-                    class="card-img"
-                    alt="image projet 1"
-                  />
-                </div>
-                <div class="card text-bg-dark m-2 card-hover">
-                  <img
-                    src="./projet_1.png"
-                    class="card-img"
-                    alt="image projet 1"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr
-        class="border border-danger rounded-1 border-4 opacity-100 mt-4 mb-4"
-      />
-      <!-- invites -->
-      <section>
-        <div>
-          <h3>
-            <i id="espaceTtravilInvites" class="bi bi-person-fill-check"></i> Espaces de Travail d'invites
-          </h3>
-        </div>
-        <div class="mt-4 mb-4">
-          <h4><i class="bi bi-people-fill"></i> Espace de travail logo</h4>
-        </div>
-        <div class="col-6">
-          <div class="card text-bg-dark m-2 card-hover">
-            <img src="./projet_1.png" class="card-img" alt="image projet 1" />
-          </div>
-        </div>
-        <div class="m-2 mb-5">
-          <!-- Button projet fermes -->
+      <!-- info projet -->
+      <section class="row">
+        <div class="col">
+          <h2>Nom du projet</h2>
+          <i class="bi bi-star"></i>
+          <i class="bi bi-people"></i>
+          <i class="bi bi-person-gear"></i>
           <button
             type="button"
-            class="btn bg-body-tertiary text-dark border border-black mt-4 button-hover"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
+            class="rounded-4 p-2 w-100 btn-primary button-hover"
           >
-            Afficher les tableaux fermés
+            Mise à niveau <i class="bi bi-border-all"></i>
           </button>
-
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModal"
-            tabindex="-1"
-            aria-labelledby="modalFermes"
-            aria-hidden="true"
+          <button
+            type="button"
+            class="rounded-4 p-2 w-100 btn-primary button-hover"
           >
-            <div class="modal-dialog">
-              <div class="modal-content overlay-bg">
-                <div class="modal-header border_b">
-                  <h1 class="modal-title fs-5" id="modalFermes">
-                    Tableaux fermés
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="row justify-content-center modal-body">
-                  <div class="col-8">
-                    <div class="card text-bg-dark m-2 card-hover">
-                      <img
-                        src="./projet_1.png"
-                        class="card-img"
-                        alt="image projet 1"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-8">
-                    <div class="card text-bg-dark m-2 card-hover">
-                      <img
-                        src="./projet_1.png"
-                        class="card-img"
-                        alt="image projet 1"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-8">
-                    <div class="card text-bg-dark m-2 card-hover">
-                      <img
-                        src="./projet_1.png"
-                        class="card-img"
-                        alt="image projet 1"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-8">
-                    <div class="card text-bg-dark m-2 card-hover">
-                      <img
-                        src="./projet_1.png"
-                        class="card-img"
-                        alt="image projet 1"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-8">
-                    <div class="card text-bg-dark m-2 card-hover">
-                      <img
-                        src="./projet_1.png"
-                        class="card-img"
-                        alt="image projet 1"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer border_t"></div>
-              </div>
-            </div>
-          </div>
+            Partage <i class="bi bi-share"></i></button
+          ><button
+            type="button"
+            class="rounded-4 p-2 w-100 btn-primary button-hover"
+          >
+            Filtrer <i class="bi bi-funnel"></i>
+          </button>
         </div>
       </section>
+      <!-- carossel projet -->
+      <section>
+
+      </section>
+      <footer></footer>
     </main>
-    <!-- linkw bootstrap-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
