@@ -1,0 +1,38 @@
+:root {
+  --line-bg: #8f0304;
+  --card-bg: #c1d5db;
+  --button-bg: #658da7;
+  --overlay-bg: #d9d9d9;
+}
+
+body {
+  font-family: poppins;
+}
+h1,h2,h3,h4,h5,h6{
+  /* perguntar sobre isso o tamanho da fonte  */
+  font-size; 
+}
+/* ----------- borders ---------- */
+.border-danger {
+  border: solid var(--line-bg) !important;
+}
+
+.border_t {
+  border-top: solid var(--line-bg) !important;
+}
+.border_b {
+  border-bottom: solid var(--line-bg) !important;
+}
+/* ---------------------- */
+
+.bg-body-tertiary {
+  background-color: var(--button-bg) !important;
+}
+
+.btn-primary {
+  background-color: var(--card-bg) !important;
+}
+
+.overlay-bg {
+  background-color: var(--overlay-bg) !important;
+}

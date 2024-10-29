@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEAM BOOST</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header/nav -->
+    <header class="mb-3">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./Logo_TEAMBOOST__1_-removebg-preview.png"
+              alt="Logo TEAM BOOST"
+              width="50"
+              height="auto"
+              class="d-inline-block align-text-top m-none"
+            />
+          </a>
+
+          <!-- Button plus -->
+          <button
+            type="button"
+            class="btn btn-primary text-dark border border-black"
+            data-bs-toggle="modal"
+            data-bs-target="#modal-Button-plus"
+          >
+            Plus <i class="bi bi-arrow-down"></i>
+          </button>
+          <!-- Modal Button plus -->
+          <div
+            class="modal fade"
+            id="modal-Button-plus"
+            tabindex="-1"
+            aria-labelledby="modal-Button-plusLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog w-50">
+              <div class="modal-content">
+                <div class="modal-header border_b">
+                  <h5 class="modal-title" id="modal-Button-plusLabel">
+                    Plus <i class="bi bi-arrow-down"></i>
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        >Espace de travail <i class="bi bi-arrow-right"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        >Tableaux récents <i class="bi bi-arrow-right"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        >Tableaux favoris <i class="bi bi-arrow-right"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#">Modèles <i class="bi bi-arrow-right"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer  border_t"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- button + collapse button -->
+          <button
+            type="button"
+            class="btn btn-primary text-dark border border-black"
+            data-bs-toggle="modal"
+            data-bs-target="#button_+"
+          >
+            <i class="bi bi-plus-circle"></i>
+          </button>
+
+          <!-- Modal Button + -->
+          <div
+            class="modal fade"
+            id="button_+"
+            tabindex="-1"
+            aria-labelledby="modal-Button-plusLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog w-50">
+              <div class="modal-content">
+                <div class="modal-header border_b">
+                  <h5 class="modal-title" id="modal-Button-plusLabel">
+                    <i class="bi bi-plus-circle"></i>
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <a href="#">Creer un tableau</a>
+                  <p>
+                    Un tableau est composé de cartes triées sur des listes.
+                    Utilisez-le pour gérer des projets, suivre les informations
+                    ou organiser quoi que ce soit.
+                  </p>
+                  <a href="">Créer à partir du modèle</a>
+                  <p>Commencez plus rapidement avec un modèle de tableau.</p>
+                </div>
+                <div class="modal-footer  border_t"></div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex gap-2">
+            <!-- search button -->
+            <button
+              class="btn btn-primary text-dark border border-black"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+
+            <!-- notification -->
+            <button
+              type="button"
+              class="btn btn-primary text-dark border border-black"
+              data-bs-toggle="modal"
+              data-bs-target="#button_notification"
+            >
+              <i class="bi bi-bell"></i>
+            </button>
+            <!-- modal notification -->
+            <div
+              class="modal fade"
+              id="button_notification"
+              tabindex="-1"
+              aria-labelledby="modal-Button-plusLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog w-50">
+                <div class="modal-content">
+                  <div class="modal-header border_b">
+                    <h5 class="modal-title" id="modal-Button-plusLabel">
+                      Notification <i class="bi bi-bell"></i>
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="text-center opacity-50 m-3">
+                      Aucune nouvelle notification pour le moment
+                    </p>
+                  </div>
+                  <div class="modal-footer border_t"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button profile -->
+            <button
+              type="button"
+              class="btn btn-primary text-dark border border-black"
+              data-bs-toggle="modal"
+              data-bs-target="#button_profile"
+            >
+              <i class="bi bi-person-circle"></i>
+            </button>
+            <!-- modal profile -->
+            <div
+              class="modal fade"
+              id="button_profile"
+              tabindex="-1"
+              aria-labelledby="button_profile"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog w-50">
+                <div class="modal-content">
+                  <div class="modal-header border_b">
+                    <h5 class="modal-title" id="button_profile">COMPTE</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <hr
+                      class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-1"
+                    />
+                    <div class="row">
+                      <div class="col-3 text-center">
+                        <i class="bi bi-person-circle"></i>
+                      </div>
+                      <div class="col">
+                        <div class="row">
+                          <div class="row">Nom Prenon</div>
+                          <div class="row">@hotmail.com</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <ul>
+                        <li><a href="#">Changer le compte</a></li>
+                        <li><a href="#">Gérer le compte</a></li>
+                      </ul>
+                    </div>
+                    <hr
+                      class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-1"
+                    />
+                    <div class="mt-2">
+                      <ul>
+                        <li><a href="#">Profil et visibilité</a></li>
+                        <li><a href="#">Activité</a></li>
+                        <li><a href="#">Cartes</a></li>
+                        <li><a href="#">Réglages</a></li>
+                        <li><a href="#">Thème</a></li>
+                      </ul>
+                    </div>
+                    <hr
+                      class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-1"
+                    />
+                    <a href="#"
+                      ><i class="bi bi-people-fill mt-3 mb-3"></i> Créer un
+                      espace de travail</a
+                    >
+
+                    <hr
+                      class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-1"
+                    />
+                    <button type="button" class="btn btn-danger mt-2 mb-4">
+                      Se Déconnecter
+                    </button>
+                    <div class="modal-footer border_t"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- search bar -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn-primary text-dark border border-black rounded-1"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main -->
+    <main class="container">
+      <!-- Réssemments consulté -->
+      <section class="row container-fluid">
+        <div class="col-12">
+          <h3 class="col-12">
+            <i class="bi bi-alarm"></i> Réssemments consulté
+          </h3>
+          <div class="row">
+            <div class="row row-cols-2 g-1">
+              <div class="col-6">
+                <div class="card m-2">
+                  <img
+                    src="./projet_1.png"
+                    class="card-img"
+                    alt="image projet 1"
+                  />
+                </div>
+                <div class="card text-bg-dark m-2">
+                  <img
+                    src="./projet_1.png"
+                    class="card-img"
+                    alt="image projet 1"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card text-bg-dark m-2">
+                  <img
+                    src="./projet_1.png"
+                    class="card-img"
+                    alt="image projet 1"
+                  />
+                </div>
+                <div class="card text-bg-dark m-2">
+                  <img
+                    src="./projet_1.png"
+                    class="card-img"
+                    alt="image projet 1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr
+        class="border border-danger rounded-1 border-4 opacity-100 mt-4 mb-4"
+      />
+      <!-- Vos espaces de travail -->
+      <section>
+        <div class="col-12">
+          <h3 class="col-12">
+            <i class="bi bi-briefcase-fill"></i> Vos espaces de travail
+          </h3>
+          <div class="row">
+            <div class="row row-cols-2 g-1">
+              <div class="col-6">
+                <div class="m-2">
+                  <button type="button" class="rounded-4 p-2 w-100 btn-primary">
+                    <i class="bi bi-people-fill"></i> Membres
+                  </button>
+                </div>
+                <div class="m-2">
+                  <button type="button" class="rounded-4 p-2 w-100 btn-primary">
+                    <i class="bi bi-gear"></i> Réglages
+                  </button>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="m-2">
+                  <button type="button" class="rounded-4 p-2 w-100 btn-primary">
+                    <i class="bi bi-eye"></i> Vues
+                  </button>
+                </div>
+                <div class="m-2">
+                  <button type="button" class="rounded-4 p-2 w-100 btn-primary">
+                    <i class="bi bi-border-all"></i> Mise à niveau
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button type="button" class="rounded-4 p-5 w-100 bg-body-tertiary">
+              Créer un nouveau tableau
+            </button>
+          </div>
+        </div>
+      </section>
+      <hr
+        class="border border-danger rounded-1 border-4 opacity-100 mt-4 mb-4"
+      />
+      <!-- modeles plus populaires -->
+      <section class="row container-fluid">
+        <div class="col-12">
+          <h3 class="col-12">
+            <i class="bi bi-archive"></i> Modéles les plus Populaires
+          </h3>
+          <div class="row">
+            <div class="row row-cols-2 g-1">
+              <div class="col-6">
+                <div class="card m-2">
+                  <img
+                    src="./projet_1.png"
+                    class="card-img"
+                    alt="image projet 1"
+                  />
+                </div>
+                <div class="card text-bg-dark m-2">
+                  <img
+                    src="./projet_1.png"
+                    class="card-img"
+                    alt="image projet 1"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card text-bg-dark m-2">
+                  <img
+                    src="./projet_1.png"
+                    class="card-img"
+                    alt="image projet 1"
+                  />
+                </div>
+                <div class="card text-bg-dark m-2">
+                  <img
+                    src="./projet_1.png"
+                    class="card-img"
+                    alt="image projet 1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr
+        class="border border-danger rounded-1 border-4 opacity-100 mt-4 mb-4"
+      />
+      <!-- invites -->
+      <section>
+        <div>
+          <h3>
+            <i class="bi bi-person-fill-check"></i> Espaces de Travail d'invites
+          </h3>
+        </div>
+        <div class="mt-4 mb-4">
+          <h4><i class="bi bi-people-fill"></i> Espace de travail logo</h4>
+        </div>
+        <div class="col-6">
+          <div class="card text-bg-dark m-2">
+            <img src="./projet_1.png" class="card-img" alt="image projet 1" />
+          </div>
+        </div>
+        <div class="m-2 mb-5">
+          <!-- Button projet fermes -->
+          <button
+            type="button"
+            class="btn bg-body-tertiary text-dark border border-black mt-4"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Afficher les tableaux fermés
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="modalFermes"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content overlay-bg">
+                <div class="modal-header border_b">
+                  <h1 class="modal-title fs-5" id="modalFermes">
+                    Tableaux fermés
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="col-6">
+                    <div class="card text-bg-dark m-2">
+                      <img
+                        src="./projet_1.png"
+                        class="card-img"
+                        alt="image projet 1"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card text-bg-dark m-2">
+                      <img
+                        src="./projet_1.png"
+                        class="card-img"
+                        alt="image projet 1"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card text-bg-dark m-2">
+                      <img
+                        src="./projet_1.png"
+                        class="card-img"
+                        alt="image projet 1"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card text-bg-dark m-2">
+                      <img
+                        src="./projet_1.png"
+                        class="card-img"
+                        alt="image projet 1"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card text-bg-dark m-2">
+                      <img
+                        src="./projet_1.png"
+                        class="card-img"
+                        alt="image projet 1"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer  border_t "></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- linkw bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
