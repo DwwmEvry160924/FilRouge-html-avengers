@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEAM BOOST</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Style.css">
+    
+
+</head>
+
+<body class="bg-color-saumon">
+
+    <!-- button + collapse button -->
+    <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+            aria-controls="collapseExample">
+            <i class="bi bi-plus-circle"></i>
+        </a>
+    </p>
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            <a href="">Creer un tableau</a>
+            <p>
+                Un tableau est composé de cartes triées sur des listes. Utilisez-le pour
+                gérer des projets, suivre les informations ou organiser quoi que ce soit.
+            </p>
+            <a href="">Créer à partir du modèle</a>
+            <p>Commencez plus rapidement avec un modèle de tableau.</p>
+        </div>
+    </div>
+
+    <!-- button plus collapse button -->
+    <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+            aria-controls="collapseExample">
+            Plus <i class="bi bi-arrow-down"></i>
+        </a>
+    </p>
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            <a href="">Espace de travail <i class="bi bi-arrow-right"></i></a>
+            <a href="">Tableaux récents <i class="bi bi-arrow-right"></i></a>
+            <a href="">Tableaux favoris <i class="bi bi-arrow-right"></i></a>
+            <a href="">Modèles <i class="bi bi-arrow-right"></i></a>
+        </div>
+    </div>
+
+
+    <main>
+        
+
+        <section class="mt-3" id="about">
+            <div class="container-fluid row">
+                <article class="col-12">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-person-circle"style="font-size:70px"></i>
+                        <div class="ms-3 mt-4">
+                            <h4 class="m-0">Prénom Nom</h4>
+                            <p>@nomdecompte</p>
+                            
+                        </div>
+                    </div>
+                   
+                </article>
+
+                <div class="container-fluid row mt-3">
+                    <article class="col-12">
+                        <p>Modifiez vos informations personnelles et vos paramètres
+                            de visibilité. Pour en savoir plus, consultez vos conditions
+                            de service ou la politique de confidentialité.</p>
+
+                        <hr class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-1 mt-4" />
+
+                        <div class="container-fluid row mt-4">
+                            <article class="col-12">
+                                <h2>Profil et visibilité</h2>
+
+                                <form>
+                                    <div class="mb-3 mt-5">
+                                        <div class="d-flex justify-content-between">
+                                            <label for="exampleFormControlInput1" class="form-label">Nom
+                                                d'utilisateur</label>
+                                            <span class="text-muted small">🔊 Toujours public</span>
+                                        </div>
+                                        <input type="text" class="form-control bg-color-bleuclair" id="exampleFormControlInput1"
+                                            placeholder="Nomdecompte">
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between">
+                                            <span>Biographie</span>
+                                            <span class="text-muted small">🔊 Toujours public</span>
+                                        </div>
+                                        <div class="form-floating">
+                                            <textarea class="form-control pt-1 bg-color-bleuclair text-gris" placeholder="Leave a comment here"
+                                                id="floatingTextarea2" style="height: 100px">Ecrivez une bio...</textarea>
+                                            
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="d-grid gap-2 col-6 mx-auto">
+                                    <button class="btn btn-primary rounded-3 bg-color-bleufoncee text-black" type="button">Confirmer</button>
+                                </div>
+
+                                <hr class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-1 mt-4" />
+
+                                <div class="container-fluid row">
+
+                                    <div class="container-fluid row">
+                                        <article class="col-12 mt-4">
+                                            <h2>Activités</h2>
+                                        </article>
+
+                                        <div class="mt-3 mb- bg-body-secondary p-2 rounded bg-color-bleuclair shadow">
+                                            <div class="row g-0">
+                                                <div class="col-4">
+                                                    <img src="projet_1.png" class="img-fluid rounded-start"
+                                                        alt="Debug Avenger 1">
+                                                </div>
+
+                                                <div class="col-8 d-flex align-items-center">
+                                                    <div class="card-body">
+                                                        <h6 class="text-center fw-medium">Projet : Debug Avenger 1</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="mt-3 mb- bg-body-secondary p-2 rounded bg-color-bleuclair shadow">
+                                            <div class="row g-0">
+                                                <div class="col-4">
+                                                    <img src="projet_1.png" class="img-fluid rounded-start"
+                                                        alt="Debug Avenger 1">
+                                                </div>
+
+                                                <div class="col-8 d-flex align-items-center">
+                                                    <div class="card-body">
+                                                        <h6 class="text-center  fw-medium">Projet : Debug Avenger 2</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-3 mb- bg-body-secondary p-2 rounded bg-color-bleuclair shadow">
+                                            <div class="row g-0">
+                                                <div class="col-4">
+                                                    <img src="projet_1.png" class="img-fluid rounded-start"
+                                                        alt="Debug Avenger 1">
+                                                </div>
+
+                                                <div class="col-8 d-flex align-items-center">
+                                                    <div class="card-body">
+                                                        <h6 class="text-center  fw-medium">Projet : Debug Avenger 3</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-3 mb- bg-body-secondary p-2 rounded bg-color-bleuclair shadow">
+                                            <div class="row g-0">
+                                                <div class="col-4">
+                                                    <img src="projet_1.png" class="img-fluid rounded-start"
+                                                        alt="Debug Avenger 1">
+                                                </div>
+
+                                                <div class="col-8 d-flex align-items-center">
+                                                    <div class="card-body">
+                                                        <h6 class="text-center fw-medium">Projet : Debug Avenger 4</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+</body>
+
+</html>
