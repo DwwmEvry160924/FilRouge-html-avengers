@@ -1,0 +1,28 @@
+body {
+    background-color: #C1D5DB;
+    color: #000000;
+    flex: content;
+  }
+  .container {
+    max-width: auto;
+    padding-top: 50px;
+  }
+  h1, h2 {
+    color: #000000;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .section-title {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #000000;
+  }
+
