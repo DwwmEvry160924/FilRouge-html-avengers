@@ -5,3 +5,51 @@
     --overlay-bg: #d9d9d9;
     --shadow: #000000;
   }
+/* style tache */
+  .tache {
+    background-color: var(--button-bg);
+  }
+/* style icons title */
+  .icon-size{
+    font-size: 1.50rem !important;
+  }
+
+/* to remove the row in the button */
+  .dropdown-toggle::after{
+    display: none !important;
+  }
+
+  /* card tab size  */
+
+  .card-size{
+    width: 100% !important;
+    height: 20rem !important;
+  }
+
+ /* -----------------------    chat box ---------------------- */
+
+
+ a.nav-link {
+  color: gray;
+  font-size: 18px;
+  padding: 0;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #e84118;
+  padding: 2px;
+  flex: none;
+}
+
+input:focus {
+  outline: 0px !important;
+  box-shadow: none !important;
+}
+
+.card-text {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}

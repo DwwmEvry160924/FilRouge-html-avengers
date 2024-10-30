@@ -10,7 +10,10 @@
     text-decoration: none;
     color:  var(--shadow);
   }
-  
+  .icon-size-pro{
+    font-size: 3rem !important;
+  }
+
   /* ----------- nav, responsve ---------- */
   
   .not-flex-grow{
