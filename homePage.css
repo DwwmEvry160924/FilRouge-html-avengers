@@ -13,8 +13,9 @@ a {
 .icon-size-pro {
   font-size: 3rem !important;
 }
-.icon-size-home {
-  font-size: 1.5rem !important;
+.icon-size-footer {
+  font-size: 2rem !important;
+  margin: 1rem !important;
 }
 
 /* ----------- nav, responsve ---------- */
@@ -43,6 +44,14 @@ body {
 .border_b {
   border-bottom: solid var(--line-bg) !important;
 }
+
+/* Responsive */
+
+.mt-sm-5, .mt-md-5{
+  margin-top: 6rem !important;
+  margin-bottom: 5rem !important;
+}
+
 /* ---------------------- */
 
 .bg-body-tertiary {
@@ -78,6 +87,19 @@ body {
   color: var(--line-bg);
   letter-spacing: 0.3rem !important;
 }
+
+.hover-link-footer:hover {
+  text-decoration: underline;
+  color: var(--line-bg);
+}
+
+.col-graphics:hover {
+  box-shadow: 0px 0px 5px 0px var(--shadow) !important;
+  border: solid var(--line-bg) !important;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 
 /* ----------------------- graficos ---------------------- */
 
