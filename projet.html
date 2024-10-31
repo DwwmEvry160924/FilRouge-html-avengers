@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projet</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="homePage.css" />
+    <link rel="stylesheet" href="projet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="mb-3">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="./Logo_TEAMBOOST__1_-removebg-preview.png"
+              alt="Logo TEAM BOOST"
+              width="50"
+              height="auto"
+              class="d-inline-block align-text-top m-none"
+            />
+          </a>
+          <!-- button + collapse button -->
+          <button
+            type="button"
+            class="btn btn-primary text-dark border border-black"
+            data-bs-toggle="modal"
+            data-bs-target="#button_+"
+          >
+            <i class="bi bi-plus-circle"></i>
+          </button>
+
+          <!-- Modal Button + -->
+          <div
+            class="modal fade"
+            id="button_+"
+            tabindex="-1"
+            aria-labelledby="modal-Button-plusLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog w-50">
+              <div class="modal-content">
+                <div class="modal-header border_b">
+                  <h5 class="modal-title" id="modal-Button-plusLabel">
+                    <i class="bi bi-plus-circle"></i>
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <a class="hover-link" href="#"
+                    >Creer un tableau <i class="bi bi-arrow-right"></i
+                  ></a>
+                  <p>
+                    Un tableau est composé de cartes triées sur des listes.
+                    Utilisez-le pour gérer des projets, suivre les informations
+                    ou organiser quoi que ce soit.
+                  </p>
+                  <a class="hover-link" href=""
+                    >Créer à partir du modèle <i class="bi bi-arrow-right"></i
+                  ></a>
+                  <p>Commencez plus rapidement avec un modèle de tableau.</p>
+                </div>
+                <div class="modal-footer border_t"></div>
+              </div>
+            </div>
+          </div>
+          <!-- search bar lg and md -->
+          <div
+            class="collapse navbar-collapse not-flex-grow"
+            id="navbarSupportedContent"
+          >
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn-primary text-dark border border-black rounded-1"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+          <div class="d-flex gap-2">
+            <!-- search button -->
+            <button
+              class="btn btn-primary text-dark border border-black d-md-none d-lg-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContentmobile"
+              aria-controls="navbarSupportedContentmobile"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+
+            <!-- notification -->
+            <button
+              type="button"
+              class="btn btn-primary text-dark border border-black"
+              data-bs-toggle="modal"
+              data-bs-target="#button_notification"
+            >
+              <i class="bi bi-bell"></i>
+            </button>
+            <!-- modal notification -->
+            <div
+              class="modal fade"
+              id="button_notification"
+              tabindex="-1"
+              aria-labelledby="modal-Button-plusLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog w-50">
+                <div class="modal-content">
+                  <div class="modal-header border_b">
+                    <h5 class="modal-title" id="modal-Button-plusLabel">
+                      Notification <i class="bi bi-bell"></i>
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="text-center opacity-50 m-3">
+                      Aucune nouvelle notification pour le moment
+                    </p>
+                  </div>
+                  <div class="modal-footer border_t"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button profile -->
+            <button
+              type="button"
+              class="btn btn-primary text-dark border border-black size"
+              data-bs-toggle="modal"
+              data-bs-target="#button_profile"
+            >
+              <i class="bi bi-person-circle"></i>
+            </button>
+            <!-- modal profile -->
+            <div
+              class="modal fade"
+              id="button_profile"
+              tabindex="-1"
+              aria-labelledby="button_profile"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog w-50">
+                <div class="modal-content">
+                  <div class="modal-header border_b">
+                    <h5 class="modal-title" id="button_profile">COMPTE</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <a class="col-3" href="./connexion.html">
+                        <div class="text-center">
+                          <i class="bi bi-person-circle"></i>
+                        </div>
+                      </a>
+                      <div class="col">
+                        <div class="row">
+                          <div class="row">Nom Prenon</div>
+                          <div class="row">@hotmail.com</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <ul>
+                        <li>
+                          <a class="hover-link" href="#">Changer le compte</a>
+                        </li>
+                        <li>
+                          <a class="hover-link" href="./Gerercompte.html"
+                            >Gérer le compte</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <hr
+                      class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-1"
+                    />
+                    <div class="mt-2">
+                      <ul>
+                        <li>
+                          <a class="hover-link" href="./Gerercompte.html"
+                            >Profil et visibilité</a
+                          >
+                        </li>
+                        <li>
+                          <a class="hover-link" href="./condiutili.html"
+                            >Conditions d'Utilisation</a
+                          >
+                        </li>
+                        <li><a class="hover-link" href="#">Thème</a></li>
+                      </ul>
+                    </div>
+                    <hr
+                      class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-1"
+                    />
+                    <a class="hover-link" href="#"
+                      ><i class="bi bi-people-fill mt-3 mb-3"></i> Créer un
+                      espace de travail</a
+                    >
+
+                    <hr
+                      class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-1"
+                    />
+                    <button type="button" class="btn btn-danger mt-2 mb-4">
+                      Se Déconnecter
+                    </button>
+                    <div class="modal-footer border_t"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- search bar mobile -->
+      <div
+        class="collapse navbar-collapse not-flex-grow mt-3"
+        id="navbarSupportedContentmobile"
+      >
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button
+            class="btn-primary text-dark border border-black rounded-1"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </header>
+    <main class="container">
+      <!-- info projet -->
+      <section class="row">
+        <div class="row">
+          <div class="row mb-4">
+            <h2 class="col-4">Nom du projet</h2>
+            <!-- star -->
+            <i class="col-2 bi bi-star icon-size"></i>
+            <!-- button people -->
+            <div class="w-25">
+              <button
+                type="button"
+                class="rounded-4 btn-primary button-hover dropdown-toggle dropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="col-2 bi bi-people icon-size"></i>
+              </button>
+
+              <ul class="dropdown-menu w-25 mt-2">
+                <h4 class="text-center">Membres :</h4>
+                <li class="text-center hover-link m-1">Prénom Nom</li>
+                <li class="text-center hover-link m-1">Prénom Nom</li>
+                <li class="text-center hover-link m-1">Prénom Nom</li>
+                <li class="text-center hover-link m-1">Prénom Nom</li>
+                <li class="text-center hover-link m-1">Prénom Nom</li>
+                <li class="text-center hover-link m-1">Prénom Nom</li>
+                <li class="text-center hover-link m-1">Prénom Nom</li>
+              </ul>
+            </div>
+            <!-- button people gear -->
+            <div class="w-25">
+              <button
+                type="button"
+                class="rounded-4 btn-primary button-hover dropdown-toggle dropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="col-2 bi-person-gear icon-size"></i>
+              </button>
+
+              <ul class="dropdown-menu w-25 mt-2">
+                <h3 class="ms-2">Rôles :</h3>
+                <h4 class="text-center">Administrateur :</h4>
+                <li class="text-center hover-link m-1">Prénom Nom</li>
+                <h4 class="text-center m-2">Développeur :</h4>
+                <li class="text-center hover-link m-1">Prénom Nom</li>
+                <li class="text-center hover-link m-1">Prénom Nom</li>
+                <li class="text-center hover-link m-1">Prénom Nom</li>
+                <li class="text-center hover-link m-1">Prénom Nom</li>
+                <li class="text-center hover-link m-1">Prénom Nom</li>
+                <li class="text-center hover-link m-1">Prénom Nom</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Button Tableau  -->
+          <button
+            type="button"
+            class="rounded-4 p-2 w-25 ms-3 btn-primary button-hover dropdown-toggle dropdown"
+            data-bs-toggle="modal"
+            data-bs-target="#Modal-table"
+          >
+            Tableau <i class="bi bi-border-all"></i>
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="Modal-table"
+            tabindex="-1"
+            aria-labelledby="modal-Tableau"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modal-Tableau">Tableau</h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div id="Carousel-Tableau" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="tab-1.png"
+                          class="d-block card-size"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="tab-2.png"
+                          class="d-block card-size"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="tab-3.png"
+                          class="d-block card-size"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="tab-4.png"
+                          class="d-block card-size"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="tab-5.png"
+                          class="d-block card-size"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#Carousel-Tableau"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon button-hover"
+                        aria-hidden="true"
+                      ></span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#Carousel-Tableau"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon button-hover"
+                        aria-hidden="true"
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- dropdown partage -->
+          <button
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            class="rounded-4 p-2 w-25 ms-3 btn-primary button-hover dropdown-toggle dropdown"
+          >
+            Partage <i class="bi bi-share"></i>
+          </button>
+          <ul class="dropdown-menu w-25">
+            <li>
+              <a class="dropdown-item hover-link" href="#"
+                ><i class="bi bi-instagram"></i> > instagram</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item hover-link" href="#"
+                ><i class="bi bi-envelope"></i> > Email</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item hover-link" href="#"
+                ><i class="bi bi-whatsapp"></i> > whatsapp</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item hover-link" href="#"
+                ><i class="bi bi-github"></i> > github</a
+              >
+            </li>
+          </ul>
+          <!-- dropdown Filtrer -->
+          <button
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            class="rounded-4 p-2 w-25 ms-3 btn-primary button-hover dropdown-toggle dropdown"
+          >
+            Filtrer <i class="bi bi-funnel"></i>
+          </button>
+          <ul class="dropdown-menu ps-3 w-25">
+            <h5 class="text-center">Trier par :</h5>
+            <li>
+              <div class="form-check">
+                <label class="form-check-label" for="flexCheck-1">
+                  Ordre alphabetique
+                </label>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="flexCheck-1"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="form-check">
+                <label class="form-check-label" for="flexCheck-2">
+                  Coulor
+                </label>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="flexCheck-2"
+                  checked
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- carossel projet -->
+      <section class="mt-5">
+        <div id="carouselProjet" class="carousel carousel-dark slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div
+                class="d-flex flex-column align-items-center justify-content-center w-100"
+              >
+                <h3>
+                  Liste 1 <span> <i class="bi bi-three-dots"></i></span>
+                </h3>
+                <ul>
+                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
+                    Tache 1
+                  </li>
+                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
+                    Tache 2
+                  </li>
+                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
+                    Tache 3
+                  </li>
+                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
+                    Tache 4
+                  </li>
+                </ul>
+
+                <div class="add-card">
+                  <span><i class="bi bi-pencil-square"></i></span> Ajouter une
+                  carte
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="d-flex flex-column align-items-center justify-content-center w-100"
+              >
+                <h3>
+                  Liste 2 <span> <i class="bi bi-three-dots"></i></span>
+                </h3>
+                <ul>
+                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
+                    Tache 1
+                  </li>
+                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
+                    Tache 2
+                  </li>
+                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
+                    Tache 3
+                  </li>
+                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
+                    Tache 4
+                  </li>
+                </ul>
+
+                <div class="add-card">
+                  <span><i class="bi bi-pencil-square"></i></span> Ajouter une
+                  carte
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="d-flex flex-column align-items-center justify-content-center w-100"
+              >
+                <h3>
+                  Liste 3 <span> <i class="bi bi-three-dots"></i></span>
+                </h3>
+                <ul>
+                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
+                    Tache 1
+                  </li>
+                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
+                    Tache 2
+                  </li>
+                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
+                    Tache 3
+                  </li>
+                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
+                    Tache 4
+                  </li>
+                </ul>
+
+                <div class="add-card">
+                  <span><i class="bi bi-pencil-square"></i></span> Ajouter une
+                  carte
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="d-flex flex-column align-items-center justify-content-center w-100"
+              >
+                <h3>
+                  Liste 4 <span> <i class="bi bi-three-dots"></i></span>
+                </h3>
+                <ul>
+                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
+                    Tache 1
+                  </li>
+                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
+                    Tache 2
+                  </li>
+                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
+                    Tache 3
+                  </li>
+                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
+                    Tache 4
+                  </li>
+                </ul>
+
+                <div class="add-card">
+                  <span><i class="bi bi-pencil-square"></i></span> Ajouter une
+                  carte
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- buttons du carousel -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselProjet"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Prev</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselProjet"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+<!-- chat button responsive mode -->
+        <button
+          class="icon-size-chat button-hover dropdown-toggle dropdown d-none d-md-flex"
+          data-bs-toggle="modal"
+          data-bs-target="#Modal-chat"
+        >
+          <i class="bi bi-chat-text-fill"></i>
+        </button>
+        <!-- Modal chat -->
+        <div
+          class="modal fade"
+          id="Modal-chat"
+          tabindex="-1"
+          aria-labelledby="Modal-chat"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="Modal-chat">Chat Teeam</h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="container mt-4">
+                  <div class="card mx-auto w-100">
+                    <div class="card-header bg-transparent">
+                      <div class="navbar navbar-expand p-0">
+                        <ul class="navbar-nav me-auto align-items-center">
+                          <li class="nav-item">
+                            <a href="#!" class="nav-link">
+                              <div
+                                class="position-relative"
+                                style="
+                                  width: 50px;
+                                  height: 50px;
+                                  border-radius: 50%;
+                                  border: 2px solid #e84118;
+                                  padding: 2px;
+                                "
+                              >
+                                <img
+                                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyBDq0_fxEONa6XAoa8_7IdR9XexAXNhJRmw&s"
+                                  class="img-fluid rounded-circle"
+                                  alt=""
+                                />
+                                <span
+                                  class="position-absolute bottom-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle"
+                                >
+                                  <span class="visually-hidden"
+                                    >Nouvelle alert</span
+                                  >
+                                </span>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#!" class="nav-link">Captain America</a>
+                          </li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto">
+                          <li class="nav-item">
+                            <a href="#!" class="nav-link">
+                              <i class="fas fa-phone-alt"></i>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#!" class="nav-link">
+                              <i class="fas fa-video"></i>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#!" class="nav-link">
+                              <i class="fas fa-times"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="card-body p-4"
+                      style="height: 500px; overflow: auto"
+                    >
+                      <div class="d-flex align-items-baseline mb-4">
+                        <div class="position-relative avatar">
+                          <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyBDq0_fxEONa6XAoa8_7IdR9XexAXNhJRmw&s"
+                            class="img-fluid rounded-circle"
+                            alt=""
+                          />
+                          <span
+                            class="position-absolute bottom-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle"
+                          >
+                            <span class="visually-hidden">Nouvelle alert</span>
+                          </span>
+                        </div>
+                        <div class="pe-2">
+                          <div>
+                            <div
+                              class="card card-text d-inline-block p-2 px-3 m-1"
+                            >
+                              Bonjour, comment puis-je vous aider ?
+                            </div>
+                          </div>
+                          <div>
+                            <div class="small">13:10</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="d-flex align-items-baseline text-end justify-content-end mb-4"
+                      >
+                        <div class="pe-2">
+                          <div>
+                            <div
+                              class="card card-text d-inline-block p-2 px-3 m-1"
+                            >
+                              Bonjour
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="card card-text d-inline-block p-2 px-3 m-1"
+                            >
+                              J'aimerais avoir quelques renseignements svp !
+                            </div>
+                          </div>
+                          <div>
+                            <div class="small">13:13</div>
+                          </div>
+                        </div>
+                        <div class="position-relative avatar">
+                          <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbosDfrJ_6cUGhGuCLOZbZId_hWEFFhFbM_z63MDhsA1WSBd2EYxxsxRZhj3OZ4Jn_rGk&usqp=CAU"
+                            class="img-fluid rounded-circle"
+                            alt=""
+                          />
+                          <span
+                            class="position-absolute bottom-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle"
+                          >
+                            <span class="visually-hidden">Nouvelle alert</span>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-baseline mb-4">
+                        <div class="position-relative avatar">
+                          <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyBDq0_fxEONa6XAoa8_7IdR9XexAXNhJRmw&s"
+                            class="img-fluid rounded-circle"
+                            alt=""
+                          />
+                          <span
+                            class="position-absolute bottom-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle"
+                          >
+                            <span class="visually-hidden">Nouvelle alert</span>
+                          </span>
+                        </div>
+                        <div class="pe-2">
+                          <div>
+                            <div
+                              class="card card-text d-inline-block p-2 px-3 m-1"
+                            >
+                              Oui, je vous écoute
+                            </div>
+                          </div>
+                          <div>
+                            <div class="small">Edited - 13:13</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="d-flex align-items-baseline text-end justify-content-end mb-4"
+                      >
+                        <div class="pe-2">
+                          <div>
+                            <div
+                              class="card card-text d-inline-block p-2 px-3 m-1"
+                            >
+                              Cool
+                            </div>
+                          </div>
+                          <div>
+                            <div class="card card-text p-2 px-3 m-1 mb-5">
+                              <div class="row align-items-center">
+                                <div class="col-1">
+                                  <a href=""><i class="fas fa-play"></i></a>
+                                </div>
+                                <div class="col">
+                                  <div
+                                    class="progress"
+                                    style="width: 100px; height: 4px"
+                                  >
+                                    <div
+                                      class="progress-bar bg-primary"
+                                      role="progressbar"
+                                      style="width: 35%"
+                                      aria-valuenow="35"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                </div>
+                                <div class="col-auto">
+                                  <div class="small fw-bold">0:34</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="position-relative avatar">
+                          <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbosDfrJ_6cUGhGuCLOZbZId_hWEFFhFbM_z63MDhsA1WSBd2EYxxsxRZhj3OZ4Jn_rGk&usqp=CAU"
+                            class="img-fluid rounded-circle"
+                            alt=""
+                          />
+                          <span
+                            class="position-absolute bottom-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle"
+                          >
+                            <span class="visually-hidden">New alerts</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="card-footer bg-white position-absolute w-100 bottom-0 m-0 p-1"
+                    >
+                      <div class="input-group">
+                        <div class="input-group-text bg-transparent border-0">
+                          <button class="btn btn-light text-secondary">
+                            <i class="fas fa-paperclip"></i>
+                          </button>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control border-0"
+                          placeholder="Ecrire un message..."
+                        />
+                        <div class="input-group-text bg-transparent border-0">
+                          <button class="btn btn-light text-secondary">
+                            <i class="fas fa-smile"></i>
+                          </button>
+                        </div>
+                        <div class="input-group-text bg-transparent border-0">
+                          <button class="btn btn-light text-secondary">
+                            <i class="fas fa-microphone"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- chat section -->
+      <section class="d-md-none">
+        <div class="container mt-4">
+          <div class="card mx-auto w-100">
+            <div class="card-header bg-transparent">
+              <div class="navbar navbar-expand p-0">
+                <ul class="navbar-nav me-auto align-items-center">
+                  <li class="nav-item">
+                    <a href="#!" class="nav-link">
+                      <div
+                        class="position-relative"
+                        style="
+                          width: 50px;
+                          height: 50px;
+                          border-radius: 50%;
+                          border: 2px solid #e84118;
+                          padding: 2px;
+                        "
+                      >
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyBDq0_fxEONa6XAoa8_7IdR9XexAXNhJRmw&s"
+                          class="img-fluid rounded-circle"
+                          alt=""
+                        />
+                        <span
+                          class="position-absolute bottom-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle"
+                        >
+                          <span class="visually-hidden">Nouvelle alert</span>
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#!" class="nav-link">Captain America</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a href="#!" class="nav-link">
+                      <i class="fas fa-phone-alt"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#!" class="nav-link">
+                      <i class="fas fa-video"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#!" class="nav-link">
+                      <i class="fas fa-times"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body p-4" style="height: 500px; overflow: auto">
+              <div class="d-flex align-items-baseline mb-4">
+                <div class="position-relative avatar">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyBDq0_fxEONa6XAoa8_7IdR9XexAXNhJRmw&s"
+                    class="img-fluid rounded-circle"
+                    alt=""
+                  />
+                  <span
+                    class="position-absolute bottom-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle"
+                  >
+                    <span class="visually-hidden">Nouvelle alert</span>
+                  </span>
+                </div>
+                <div class="pe-2">
+                  <div>
+                    <div class="card card-text d-inline-block p-2 px-3 m-1">
+                      Bonjour, comment puis-je vous aider ?
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small">13:10</div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="d-flex align-items-baseline text-end justify-content-end mb-4"
+              >
+                <div class="pe-2">
+                  <div>
+                    <div class="card card-text d-inline-block p-2 px-3 m-1">
+                      Bonjour
+                    </div>
+                  </div>
+                  <div>
+                    <div class="card card-text d-inline-block p-2 px-3 m-1">
+                      J'aimerais avoir quelques renseignements svp !
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small">13:13</div>
+                  </div>
+                </div>
+                <div class="position-relative avatar">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbosDfrJ_6cUGhGuCLOZbZId_hWEFFhFbM_z63MDhsA1WSBd2EYxxsxRZhj3OZ4Jn_rGk&usqp=CAU"
+                    class="img-fluid rounded-circle"
+                    alt=""
+                  />
+                  <span
+                    class="position-absolute bottom-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle"
+                  >
+                    <span class="visually-hidden">Nouvelle alert</span>
+                  </span>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-baseline mb-4">
+                <div class="position-relative avatar">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyBDq0_fxEONa6XAoa8_7IdR9XexAXNhJRmw&s"
+                    class="img-fluid rounded-circle"
+                    alt=""
+                  />
+                  <span
+                    class="position-absolute bottom-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle"
+                  >
+                    <span class="visually-hidden">Nouvelle alert</span>
+                  </span>
+                </div>
+                <div class="pe-2">
+                  <div>
+                    <div class="card card-text d-inline-block p-2 px-3 m-1">
+                      Oui, je vous écoute
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small">Edited - 13:13</div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="d-flex align-items-baseline text-end justify-content-end mb-4"
+              >
+                <div class="pe-2">
+                  <div>
+                    <div class="card card-text d-inline-block p-2 px-3 m-1">
+                      Cool
+                    </div>
+                  </div>
+                  <div>
+                    <div class="card card-text p-2 px-3 m-1 mb-5">
+                      <div class="row align-items-center">
+                        <div class="col-1">
+                          <a href=""><i class="fas fa-play"></i></a>
+                        </div>
+                        <div class="col">
+                          <div
+                            class="progress"
+                            style="width: 100px; height: 4px"
+                          >
+                            <div
+                              class="progress-bar bg-primary"
+                              role="progressbar"
+                              style="width: 35%"
+                              aria-valuenow="35"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="small fw-bold">0:34</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-relative avatar">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbosDfrJ_6cUGhGuCLOZbZId_hWEFFhFbM_z63MDhsA1WSBd2EYxxsxRZhj3OZ4Jn_rGk&usqp=CAU"
+                    class="img-fluid rounded-circle"
+                    alt=""
+                  />
+                  <span
+                    class="position-absolute bottom-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle"
+                  >
+                    <span class="visually-hidden">New alerts</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-footer bg-white position-absolute w-100 bottom-0 m-0 p-1"
+            >
+              <div class="input-group">
+                <div class="input-group-text bg-transparent border-0">
+                  <button class="btn btn-light text-secondary">
+                    <i class="fas fa-paperclip"></i>
+                  </button>
+                </div>
+                <input
+                  type="text"
+                  class="form-control border-0"
+                  placeholder="Ecrire un message..."
+                />
+                <div class="input-group-text bg-transparent border-0">
+                  <button class="btn btn-light text-secondary">
+                    <i class="fas fa-smile"></i>
+                  </button>
+                </div>
+                <div class="input-group-text bg-transparent border-0">
+                  <button class="btn btn-light text-secondary">
+                    <i class="fas fa-microphone"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- graphics -->
+    <section class="row ms-3 d-none d-lg-block">
+      <svg class="col-3 " width="200" height="100">
+        <rect x="10" y="10" width="30" height="80" class="barra-1"></rect>
+        <rect x="50" y="20" width="30" height="70" class="barra-3"></rect>
+        <rect x="90" y="30" width="30" height="60" class="barra-2"></rect>
+      </svg>
+      <svg class="col-3" width="200" height="100">
+        <rect x="10" y="10" width="30" height="80" class="barra-1"></rect>
+        <rect x="50" y="20" width="30" height="70" class="barra-3"></rect>
+        <rect x="90" y="30" width="80" height="60" class="barra-2"></rect>
+      </svg>
+      <svg class="col-3" width="200" height="100">
+        <rect x="300" y="10" width="110" height="80" class="barra-1"></rect>
+        <rect x="50" y="20" width="90" height="70" class="barra-3"></rect>
+        <rect x="170" y="30" width="80" height="60" class="barra-2"></rect>
+      </svg>
+      <div class="row mt-4">
+        <div class="w-50 style-grafico">
+          <h1>Projet 1</h1>
+          <div class="barra style-grafico-2">
+            <div class="grafico" style="margin: 1px">
+              <div
+                class="grafico1"
+                style="
+                  height: 100px;
+                  width: 60px;
+                  margin: 5px;
+                  background-color: blue;
+                "
+              >
+                100%
+              </div>
+              <p style="color: black">Nagib</p>
+            </div>
+            <div class="grafico" style="margin: 1px">
+              <div
+                class="grafico2"
+                style="
+                  height: 70px;
+                  width: 60px;
+                  margin: 5px;
+                  background-color: black;
+                "
+              >
+                70%
+              </div>
+              <p style="color: black">Soren</p>
+            </div>
+            <div class="grafico" style="margin: 1px">
+              <div
+                class="grafico3"
+                style="
+                  height: 60px;
+                  width: 60px;
+                  margin: 5px;
+                  background-color: green;
+                "
+              >
+                60%
+              </div>
+              <p style="color: black">Leesha</p>
+            </div>
+            <div class="grafico" style="margin: 1px">
+              <div
+                class="grafico4"
+                style="
+                  height: 50px;
+                  width: 60px;
+                  margin: 5px;
+                  background-color: royalblue;
+                "
+              >
+                50%
+              </div>
+              <p style="color: black">Adrian</p>
+            </div>
+            <div class="grafico" style="margin: 1px">
+              <div
+                class="grafico5"
+                style="
+                  height: 40px;
+                  width: 60px;
+                  margin: 5px;
+                  background-color: violet;
+                "
+              >
+                40%
+              </div>
+              <p style="color: black">Eduardo</p>
+            </div>
+          </div>
+        </div>
+        <div class="style-grafico">
+          <h1>Debug Avengers</h1>
+          <div class="barra style-grafico-2">
+            <div class="grafico" style="margin: 1px">
+              <div
+                class="grafico1"
+                style="
+                  height: 50px;
+                  width: 60px;
+                  margin: 5px;
+                  background-color: blue;
+                "
+              ></div>
+              <p style="color: black">Nagib</p>
+            </div>
+            <div class="grafico" style="margin: 1px">
+              <div
+                class="grafico2"
+                style="
+                  height: 100px;
+                  width: 60px;
+                  margin: 5px;
+                  background-color: black;
+                "
+              ></div>
+              <p style="color: black">Soren</p>
+            </div>
+            <div class="grafico" style="margin: 1px">
+              <div
+                class="grafico3"
+                style="
+                  height: 60px;
+                  width: 60px;
+                  margin: 5px;
+                  background-color: green;
+                "
+              ></div>
+              <p style="color: black">Leesha</p>
+            </div>
+            <div class="grafico" style="margin: 1px">
+              <div
+                class="grafico4"
+                style="
+                  height: 70px;
+                  width: 60px;
+                  margin: 5px;
+                  background-color: royalblue;
+                "
+              ></div>
+              <p style="color: black">Adrian</p>
+            </div>
+            <div class="grafico" style="margin: 1px">
+              <div
+                class="grafico5"
+                style="
+                  height: 90px;
+                  width: 60px;
+                  margin: 5px;
+                  background-color: violet;
+                "
+              ></div>
+              <p style="color: black">Eduardo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- footer -->
+    <footer class="row bg-body-tertiary d-none d-md-flex">
+      <div class="col ms-3 align-self-center">
+        <div class="w-25 d-flex">
+          <a class="dropdown-item hover-link" href="#"
+            ><i class="bi bi-instagram icon-size-home"></i>
+          </a>
+
+          <a class="dropdown-item hover-link" href="#"
+            ><i class="bi bi-envelope icon-size-home"></i>
+          </a>
+
+          <a class="dropdown-item hover-link" href="#"
+            ><i class="bi bi-whatsapp icon-size-home"></i>
+          </a>
+
+          <a class="dropdown-item hover-link" href="#"
+            ><i class="bi bi-github icon-size-home"></i
+          ></a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <h5 class="text-center mt-3">© 2024, TeamBoost</h5>
+        </div>
+        <hr class="border border-danger rounded-1 opacity-100 mt-4 mb-4" />
+        <div class="row">
+          <p class="text-center">
+            Politique relative aux cookies - Paramètres des cookies
+          </p>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-end">
+        <a id="navbar-brand" href="#navbar-brand">
+          <img
+            src="./Logo_TEAMBOOST__1_-removebg-preview.png"
+            alt="Logo TEAM BOOST"
+            width="120"
+            height="auto"
+            class="mt-auto"
+          />
+        </a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

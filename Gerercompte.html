@@ -17,6 +17,260 @@
     <title>Gerer le compte</title>
 </head>
 <body>
+    <!-- header / nav -->
+    <header class="mb-3">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a id="navbar-brand" class="navbar-brand" href="index.html">
+              <img
+                src="./Logo_TEAMBOOST__1_-removebg-preview.png"
+                alt="Logo TEAM BOOST"
+                width="50"
+                height="auto"
+                class="d-inline-block align-text-top m-none"
+              />
+            </a>
+  
+            
+  
+            <!-- button + collapse button -->
+            <button
+              type="button"
+              class="btn btn-primary text-dark border border-black"
+              data-bs-toggle="modal"
+              data-bs-target="#button_+"
+            >
+              <i class="bi bi-plus-circle"></i>
+            </button>
+  
+            <!-- Modal Button + -->
+            <div
+              class="modal fade"
+              id="button_+"
+              tabindex="-1"
+              aria-labelledby="modal-Button-plusLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog w-50">
+                <div class="modal-content">
+                  <div class="modal-header border_b">
+                    <h5 class="modal-title" id="modal-Button-plusLabel">
+                      <i class="bi bi-plus-circle"></i>
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <a class="hover-link" href="#"
+                      >Creer un tableau <i class="bi bi-arrow-right"></i
+                    ></a>
+                    <p>
+                      Un tableau est composé de cartes triées sur des listes.
+                      Utilisez-le pour gérer des projets, suivre les informations
+                      ou organiser quoi que ce soit.
+                    </p>
+                    <a class="hover-link" href=""
+                      >Créer à partir du modèle <i class="bi bi-arrow-right"></i
+                    ></a>
+                    <p>Commencez plus rapidement avec un modèle de tableau.</p>
+                  </div>
+                  <div class="modal-footer border_t"></div>
+                </div>
+              </div>
+            </div>
+            <!-- search bar lg and md -->
+            <div
+              class="collapse navbar-collapse not-flex-grow"
+              id="navbarSupportedContent"
+            >
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn-primary text-dark border border-black rounded-1"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+            <div class="d-flex gap-2">
+              <!-- search button -->
+              <button
+                class="btn btn-primary text-dark border border-black d-md-none d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContentmobile"
+                aria-controls="navbarSupportedContentmobile"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+  
+              <!-- notification -->
+              <button
+                type="button"
+                class="btn btn-primary text-dark border border-black"
+                data-bs-toggle="modal"
+                data-bs-target="#button_notification"
+              >
+                <i class="bi bi-bell"></i>
+              </button>
+              <!-- modal notification -->
+              <div
+                class="modal fade"
+                id="button_notification"
+                tabindex="-1"
+                aria-labelledby="modal-Button-plusLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog w-50">
+                  <div class="modal-content">
+                    <div class="modal-header border_b">
+                      <h5 class="modal-title" id="modal-Button-plusLabel">
+                        Notification <i class="bi bi-bell"></i>
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="text-center opacity-50 m-3">
+                        Aucune nouvelle notification pour le moment
+                      </p>
+                    </div>
+                    <div class="modal-footer border_t"></div>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Button profile -->
+              <button
+                type="button"
+                class="btn btn-primary text-dark border border-black size"
+                data-bs-toggle="modal"
+                data-bs-target="#button_profile"
+              >
+                <i class="bi bi-person-circle"></i>
+              </button>
+              <!-- modal profile -->
+              <div
+                class="modal fade"
+                id="button_profile"
+                tabindex="-1"
+                aria-labelledby="button_profile"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog w-50">
+                  <div class="modal-content">
+                    <div class="modal-header border_b">
+                      <h5 class="modal-title" id="button_profile">COMPTE</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <a class="col-3" href="./connexion.html">
+                          <div class="text-center">
+                            <i class="bi bi-person-circle icon-size-pro"></i>
+                          </div>
+                        </a>
+                        <div class="col">
+                          <div class="row">
+                            <div class="row">Nom Prenon</div>
+                            <div class="row">@hotmail.com</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <ul>
+                          <li>
+                            <a class="hover-link" href="#">Changer le compte</a>
+                          </li>
+                          <li>
+                            <a class="hover-link" href="./Gerercompte.html"
+                              >Gérer le compte</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <hr
+                        class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-1"
+                      />
+                      <div class="mt-2">
+                        <ul>
+                          <li>
+                            <a class="hover-link" href="./Gerercompte.html"
+                              >Profil et visibilité</a
+                            >
+                          </li>
+                          <li>
+                            <a class="hover-link" href="./condiutili.html"
+                              >Conditions d'Utilisation</a
+                            >
+                          </li>
+                          <li><a class="hover-link" href="#">Thème</a></li>
+                        </ul>
+                      </div>
+                      <hr
+                        class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-1"
+                      />
+                      <a class="hover-link" href="#"
+                        ><i class="bi bi-people-fill mt-3 mb-3"></i> Créer un
+                        espace de travail</a
+                      >
+  
+                      <hr
+                        class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-1"
+                      />
+                      <button type="button" class="btn btn-danger mt-2 mb-4">
+                        Se Déconnecter
+                      </button>
+                      <div class="modal-footer border_t"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- search bar mobile -->
+        <div
+          class="collapse navbar-collapse not-flex-grow mt-3"
+          id="navbarSupportedContentmobile"
+        >
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn-primary text-dark border border-black rounded-1"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </header>
 
 <div class="container mt-5">
     <h3 class="fw-bold">Profil et visibilité</h3>

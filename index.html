@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEAM BOOST</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="homePage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header / nav -->
+    <header class="mb-3">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a id="navbar-brand" class="navbar-brand" href="#navbar-brand">
+            <img
+              src="./Logo_TEAMBOOST__1_-removebg-preview.png"
+              alt="Logo TEAM BOOST"
+              width="50"
+              height="auto"
+              class="d-inline-block align-text-top m-none"
+            />
+          </a>
+
+          <!-- dropdown Button plus -->
+          <div
+            class="dropdown"
+            id="modal-Button-plus"
+            tabindex="-1"
+            aria-labelledby="modal-Button-plusLabel"
+            aria-hidden="true"
+          >
+            <button
+              type="button"
+              class="btn btn-primary text-dark border border-black dropdown-toggle"
+              data-bs-toggle="dropdown"
+              data-bs-target="#modal-Button-plus"
+            >
+              Plus <i class="bi bi-arrow-down"></i>
+            </button>
+
+            <div class="dropdown w-50">
+              <ul class="dropdown-menu p-2 mt-2">
+                <hr
+                  class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-2"
+                />
+                <li>
+                  <a class="hover-link dropdown-item" href="#espaceTtravil"
+                    >Espace de travail <i class="bi bi-arrow-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="hover-link dropdown-item" href="#resseConsult"
+                    >Tableaux récents <i class="bi bi-arrow-right pe-5"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="hover-link dropdown-item" href="#TableauxFavoris"
+                    >Tableaux favoris <i class="bi bi-arrow-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="hover-link dropdown-item"
+                    href="#espaceTtravilInvites"
+                    >Espaces de Travail d'invites
+                    <i class="bi bi-arrow-right"></i
+                  ></a>
+                </li>
+                <hr
+                  class="border border-danger rounded-1 border-2 opacity-100 mt-2 mb-1"
+                />
+              </ul>
+            </div>
+          </div>
+
+          <!-- button + collapse button -->
+          <button
+            type="button"
+            class="btn btn-primary text-dark border border-black"
+            data-bs-toggle="modal"
+            data-bs-target="#button_+"
+          >
+            <i class="bi bi-plus-circle"></i>
+          </button>
+
+          <!-- Modal Button + -->
+          <div
+            class="modal fade"
+            id="button_+"
+            tabindex="-1"
+            aria-labelledby="modal-Button-plusLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog w-50">
+              <div class="modal-content">
+                <div class="modal-header border_b">
+                  <h5 class="modal-title" id="modal-Button-plusLabel">
+                    <i class="bi bi-plus-circle"></i>
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <a class="hover-link" href="#"
+                    >Creer un tableau <i class="bi bi-arrow-right"></i
+                  ></a>
+                  <p>
+                    Un tableau est composé de cartes triées sur des listes.
+                    Utilisez-le pour gérer des projets, suivre les informations
+                    ou organiser quoi que ce soit.
+                  </p>
+                  <a class="hover-link" href=""
+                    >Créer à partir du modèle <i class="bi bi-arrow-right"></i
+                  ></a>
+                  <p>Commencez plus rapidement avec un modèle de tableau.</p>
+                </div>
+                <div class="modal-footer border_t"></div>
+              </div>
+            </div>
+          </div>
+          <!-- search bar lg and md -->
+          <div
+            class="collapse navbar-collapse not-flex-grow"
+            id="navbarSupportedContent"
+          >
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn-primary text-dark border border-black rounded-1"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+          <div class="d-flex gap-2">
+            <!-- search button -->
+            <button
+              class="btn btn-primary text-dark border border-black d-md-none d-lg-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContentmobile"
+              aria-controls="navbarSupportedContentmobile"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+
+            <!-- notification -->
+            <button
+              type="button"
+              class="btn btn-primary text-dark border border-black"
+              data-bs-toggle="modal"
+              data-bs-target="#button_notification"
+            >
+              <i class="bi bi-bell"></i>
+            </button>
+            <!-- modal notification -->
+            <div
+              class="modal fade"
+              id="button_notification"
+              tabindex="-1"
+              aria-labelledby="modal-Button-plusLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog w-50">
+                <div class="modal-content">
+                  <div class="modal-header border_b">
+                    <h5 class="modal-title" id="modal-Button-plusLabel">
+                      Notification <i class="bi bi-bell"></i>
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="text-center opacity-50 m-3">
+                      Aucune nouvelle notification pour le moment
+                    </p>
+                  </div>
+                  <div class="modal-footer border_t"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button profile -->
+            <button
+              type="button"
+              class="btn btn-primary text-dark border border-black size"
+              data-bs-toggle="modal"
+              data-bs-target="#button_profile"
+            >
+              <i class="bi bi-person-circle"></i>
+            </button>
+            <!-- modal profile -->
+            <div
+              class="modal fade"
+              id="button_profile"
+              tabindex="-1"
+              aria-labelledby="button_profile"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog w-50">
+                <div class="modal-content">
+                  <div class="modal-header border_b">
+                    <h5 class="modal-title" id="button_profile">COMPTE</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <a class="col-3" href="./connexion.html">
+                        <div class="text-center">
+                          <i class="bi bi-person-circle icon-size-pro"></i>
+                        </div>
+                      </a>
+                      <div class="col">
+                        <div class="row">
+                          <div class="row">Nom Prenon</div>
+                          <div class="row">@hotmail.com</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <ul>
+                        <li>
+                          <a class="hover-link" href="#">Changer le compte</a>
+                        </li>
+                        <li>
+                          <a class="hover-link" href="./Gerercompte.html"
+                            >Gérer le compte</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <hr
+                      class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-1"
+                    />
+                    <div class="mt-2">
+                      <ul>
+                        <li>
+                          <a class="hover-link" href="./Gerercompte.html"
+                            >Profil et visibilité</a
+                          >
+                        </li>
+                        <li>
+                          <a class="hover-link" href="./condiutili.html"
+                            >Conditions d'Utilisation</a
+                          >
+                        </li>
+                        <li><a class="hover-link" href="#">Thème</a></li>
+                      </ul>
+                    </div>
+                    <hr
+                      class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-1"
+                    />
+                    <a class="hover-link" href="#"
+                      ><i class="bi bi-people-fill mt-3 mb-3"></i> Créer un
+                      espace de travail</a
+                    >
+
+                    <hr
+                      class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-1"
+                    />
+                    <button type="button" class="btn btn-danger mt-2 mb-4">
+                      Se Déconnecter
+                    </button>
+                    <div class="modal-footer border_t"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- search bar mobile -->
+      <div
+        class="collapse navbar-collapse not-flex-grow mt-3"
+        id="navbarSupportedContentmobile"
+      >
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button
+            class="btn-primary text-dark border border-black rounded-1"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </header>
+    <!-- main -->
+    <main class="container">
+      <!-- Réssemments consulté -->
+      <section class="row container-fluid">
+        <div class="col-12">
+          <h3 class="col-12">
+            <i id="resseConsult" class="bi bi-alarm"></i> Récemment consulté
+          </h3>
+          <div class="row">
+            <div class="row g-2">
+              <div class="col d-lg-flex d-md-flex">
+                <div class="card text-bg-dark m-2 mb-4">
+                  <a href="projet.html">
+                    <img
+                      src="./projet_1.png"
+                      class="card-img card-hover"
+                      alt="image projet 1"
+                  /></a>
+                </div>
+                <div class="card m-2 bg-lg-primary">
+                  <img
+                    src="./projet_1.png"
+                    class="card-img card-hover"
+                    alt="image projet 1"
+                  />
+                </div>
+              </div>
+              <div class="col bg-lg-primary d-lg-flex d-md-fle">
+                <div class="card text-bg-dark m-2 mb-4">
+                  <img
+                    src="./projet_1.png"
+                    class="card-img card-hover"
+                    alt="image projet 1"
+                  />
+                </div>
+                <div class="card m-2 bg-lg-primary">
+                  <img
+                    src="./projet_1.png"
+                    class="card-img card-hover"
+                    alt="image projet 1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr
+        class="border border-danger rounded-1 border-4 opacity-100 mt-4 mb-4"
+      />
+      <!-- Vos espaces de travail -->
+      <section>
+        <div class="col-12">
+          <h3 class="col-12">
+            <i id="espaceTtravil" class="bi bi-briefcase-fill"></i> Vos espaces
+            de travail
+          </h3>
+          <div class="row">
+            <div class="row row-cols-2 g-1">
+              <div class="col-6">
+                <div class="m-2">
+                  <button
+                    type="button"
+                    class="rounded-4 p-2 w-100 btn-primary button-hover"
+                  >
+                    <i class="bi bi-people-fill"></i> Membres
+                  </button>
+                </div>
+                <div class="m-2">
+                  <button
+                    type="button"
+                    class="rounded-4 p-2 w-100 btn-primary button-hover"
+                  >
+                    <i class="bi bi-gear"></i> Réglages
+                  </button>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="m-2">
+                  <button
+                    type="button"
+                    class="rounded-4 p-2 w-100 btn-primary button-hover"
+                  >
+                    <i class="bi bi-eye"></i> Vues
+                  </button>
+                </div>
+                <div class="m-2">
+                  <button
+                    type="button"
+                    class="rounded-4 p-2 w-100 btn-primary button-hover"
+                  >
+                    <i class="bi bi-border-all"></i> Mise à niveau
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button
+              type="button"
+              class="rounded-4 p-5 w-100 bg-body-tertiary shadow"
+            >
+              Créer un nouveau tableau
+            </button>
+          </div>
+        </div>
+      </section>
+      <hr
+        class="border border-danger rounded-1 border-4 opacity-100 mt-4 mb-4"
+      />
+      <!-- modeles plus populaires -->
+      <section class="row container-fluid">
+        <div class="col-12">
+          <h3 class="col-12">
+            <i id="TableauxFavoris" class="bi bi-archive"></i> Tableaux favoris
+          </h3>
+          <div class="row">
+            <div class="row g-2">
+              <div class="col d-lg-flex d-md-flex">
+                <div class="card text-bg-dark m-2 mb-4">
+                  <a href="projet.html">
+                    <img
+                      src="./projet_1.png"
+                      class="card-img card-hover"
+                      alt="image projet 1"
+                  /></a>
+                </div>
+                <div class="card m-2 bg-lg-primary">
+                  <img
+                    src="./projet_1.png"
+                    class="card-img card-hover"
+                    alt="image projet 1"
+                  />
+                </div>
+              </div>
+              <div class="col bg-lg-primary d-lg-flex d-md-fle">
+                <div class="card text-bg-dark m-2 mb-4">
+                  <img
+                    src="./projet_1.png"
+                    class="card-img card-hover"
+                    alt="image projet 1"
+                  />
+                </div>
+                <div class="card m-2 bg-lg-primary">
+                  <img
+                    src="./projet_1.png"
+                    class="card-img card-hover"
+                    alt="image projet 1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr
+        class="border border-danger rounded-1 border-4 opacity-100 mt-4 mb-4"
+      />
+      <!-- invites -->
+      <section>
+        <div>
+          <h3>
+            <i id="espaceTtravilInvites" class="bi bi-person-fill-check"></i>
+            Espaces de Travail d'invites
+          </h3>
+        </div>
+        <div class="mt-4 mb-4">
+          <h4><i class="bi bi-people-fill"></i> Espace de travail logo</h4>
+        </div>
+        <div class="col-6 p-lg-4 p-md-4">
+          <div class="card text-bg-dark m-2 card-hover">
+            <img src="./projet_1.png" class="card-img" alt="image projet 1" />
+          </div>
+        </div>
+        <div class="m-2 mb-5">
+          <!-- Button projet fermes -->
+          <button
+            type="button"
+            class="btn bg-body-tertiary text-dark border border-black mt-4 button-hover p-lg-4 fs-lg-4"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Afficher les tableaux fermés
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="modalFermes"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content overlay-bg">
+                <div class="modal-header border_b">
+                  <h1 class="modal-title fs-5" id="modalFermes">
+                    Tableaux fermés
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="row justify-content-center modal-body">
+                  <div class="col-8">
+                    <div class="card text-bg-dark m-2 card-hover">
+                      <img
+                        src="./projet_1.png"
+                        class="card-img"
+                        alt="image projet 1"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="card text-bg-dark m-2 card-hover">
+                      <img
+                        src="./projet_1.png"
+                        class="card-img"
+                        alt="image projet 1"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="card text-bg-dark m-2 card-hover">
+                      <img
+                        src="./projet_1.png"
+                        class="card-img"
+                        alt="image projet 1"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="card text-bg-dark m-2 card-hover">
+                      <img
+                        src="./projet_1.png"
+                        class="card-img"
+                        alt="image projet 1"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="card text-bg-dark m-2 card-hover">
+                      <img
+                        src="./projet_1.png"
+                        class="card-img"
+                        alt="image projet 1"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer border_t"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- graphics -->
+    <section class="row ms-3 d-none d-lg-block">
+      <svg class="col-3" width="200" height="100">
+        <rect x="10" y="10" width="30" height="80" class="barra-1"></rect>
+        <rect x="50" y="20" width="30" height="70" class="barra-3"></rect>
+        <rect x="90" y="30" width="30" height="60" class="barra-2"></rect>
+      </svg>
+      <svg class="col-3" width="200" height="100">
+        <rect x="10" y="10" width="30" height="80" class="barra-1"></rect>
+        <rect x="50" y="20" width="30" height="70" class="barra-3"></rect>
+        <rect x="90" y="30" width="80" height="60" class="barra-2"></rect>
+      </svg>
+      <svg class="col-3" width="200" height="100">
+        <rect x="300" y="10" width="110" height="80" class="barra-1"></rect>
+        <rect x="50" y="20" width="90" height="70" class="barra-3"></rect>
+        <rect x="170" y="30" width="80" height="60" class="barra-2"></rect>
+      </svg>
+      <div class="row mt-4">
+        <div class="w-50 style-grafico">
+          <h1>Projet 1</h1>
+          <div class="barra style-grafico-2">
+            <div class="grafico" style="margin: 1px">
+              <div
+                class="grafico1"
+                style="
+                  height: 100px;
+                  width: 60px;
+                  margin: 5px;
+                  background-color: blue;
+                "
+              >
+                100%
+              </div>
+              <p style="color: black">Nagib</p>
+            </div>
+            <div class="grafico" style="margin: 1px">
+              <div
+                class="grafico2"
+                style="
+                  height: 70px;
+                  width: 60px;
+                  margin: 5px;
+                  background-color: black;
+                "
+              >
+                70%
+              </div>
+              <p style="color: black">Soren</p>
+            </div>
+            <div class="grafico" style="margin: 1px">
+              <div
+                class="grafico3"
+                style="
+                  height: 60px;
+                  width: 60px;
+                  margin: 5px;
+                  background-color: green;
+                "
+              >
+                60%
+              </div>
+              <p style="color: black">Leesha</p>
+            </div>
+            <div class="grafico" style="margin: 1px">
+              <div
+                class="grafico4"
+                style="
+                  height: 50px;
+                  width: 60px;
+                  margin: 5px;
+                  background-color: royalblue;
+                "
+              >
+                50%
+              </div>
+              <p style="color: black">Adrian</p>
+            </div>
+            <div class="grafico" style="margin: 1px">
+              <div
+                class="grafico5"
+                style="
+                  height: 40px;
+                  width: 60px;
+                  margin: 5px;
+                  background-color: violet;
+                "
+              >
+                40%
+              </div>
+              <p style="color: black">Eduardo</p>
+            </div>
+          </div>
+        </div>
+        <div class="style-grafico">
+          <h1>Debug Avengers</h1>
+          <div class="barra style-grafico-2">
+            <div class="grafico" style="margin: 1px">
+              <div
+                class="grafico1"
+                style="
+                  height: 50px;
+                  width: 60px;
+                  margin: 5px;
+                  background-color: blue;
+                "
+              ></div>
+              <p style="color: black">Nagib</p>
+            </div>
+            <div class="grafico" style="margin: 1px">
+              <div
+                class="grafico2"
+                style="
+                  height: 100px;
+                  width: 60px;
+                  margin: 5px;
+                  background-color: black;
+                "
+              ></div>
+              <p style="color: black">Soren</p>
+            </div>
+            <div class="grafico" style="margin: 1px">
+              <div
+                class="grafico3"
+                style="
+                  height: 60px;
+                  width: 60px;
+                  margin: 5px;
+                  background-color: green;
+                "
+              ></div>
+              <p style="color: black">Leesha</p>
+            </div>
+            <div class="grafico" style="margin: 1px">
+              <div
+                class="grafico4"
+                style="
+                  height: 70px;
+                  width: 60px;
+                  margin: 5px;
+                  background-color: royalblue;
+                "
+              ></div>
+              <p style="color: black">Adrian</p>
+            </div>
+            <div class="grafico" style="margin: 1px">
+              <div
+                class="grafico5"
+                style="
+                  height: 90px;
+                  width: 60px;
+                  margin: 5px;
+                  background-color: violet;
+                "
+              ></div>
+              <p style="color: black">Eduardo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="row bg-body-tertiary d-none d-md-flex">
+      <div class="col ms-3 align-self-center">
+        <div class="w-25 d-flex">
+          <a class="dropdown-item hover-link" href="#"
+            ><i class="bi bi-instagram icon-size-home"></i>
+          </a>
+
+          <a class="dropdown-item hover-link" href="#"
+            ><i class="bi bi-envelope icon-size-home"></i>
+          </a>
+
+          <a class="dropdown-item hover-link" href="#"
+            ><i class="bi bi-whatsapp icon-size-home"></i>
+          </a>
+
+          <a class="dropdown-item hover-link" href="#"
+            ><i class="bi bi-github icon-size-home"></i
+          ></a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <h5 class="text-center mt-3">© 2024, TeamBoost</h5>
+        </div>
+        <hr class="border border-danger rounded-1 opacity-100 mt-4 mb-4" />
+        <div class="row">
+          <p class="text-center">
+            Politique relative aux cookies - Paramètres des cookies
+          </p>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-end">
+        <a id="navbar-brand" href="#navbar-brand">
+          <img
+            src="./Logo_TEAMBOOST__1_-removebg-preview.png"
+            alt="Logo TEAM BOOST"
+            width="120"
+            height="auto"
+            class="mt-auto"
+          />
+        </a>
+      </div>
+    </footer>
+    <!-- linkw bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
