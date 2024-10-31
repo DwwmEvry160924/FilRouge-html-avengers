@@ -13,6 +13,9 @@
   .icon-size-pro{
     font-size: 3rem !important;
   }
+  .icon-size-home{
+    font-size: 1.5rem !important;
+  }
 
   /* ----------- nav, responsve ---------- */
   
@@ -25,6 +28,12 @@
     font-family: poppins;
     background-color: #FCEEE3;
   }
+
+  .bg-lg-primary {
+    height: 80px !important;
+  }
+
+
   
   /* ----------- borders ---------- */
   .border-danger {
@@ -73,4 +82,3 @@
     color: var(--line-bg);
     letter-spacing: 0.3rem !important;
   }
-  

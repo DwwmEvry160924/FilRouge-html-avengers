@@ -25,7 +25,11 @@
     width: 100% !important;
     height: 20rem !important;
   }
-
+  body {
+    font-family: poppins !important;
+    background-color: #FCEEE3 !important;
+  }
+  
  /* -----------------------    chat box ---------------------- */
 
 
