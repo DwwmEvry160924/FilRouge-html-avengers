@@ -26,3 +26,10 @@ body {
     color: #000000;
   }
 
+section {
+  background-color: rgb(241, 239, 221);
+  text-align: center;
+  padding: 50px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
