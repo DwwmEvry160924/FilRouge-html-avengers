@@ -37,9 +37,39 @@
             />
           </a>
 
+          <!-- buton plus lg and md -->
+          <div
+            class="collapse navbar-collapse not-flex-grow"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="ms-4">
+                <a class="hover-link-nav dropdown-item" href="#espaceTtravil"
+                  >Espace de travail
+                </a>
+              </li>
+              <li class="ms-4">
+                <a class="hover-link-nav dropdown-item" href="#resseConsult"
+                  >Tableaux récents
+                </a>
+              </li>
+              <li class="ms-4">
+                <a class="hover-link-nav dropdown-item" href="#TableauxFavoris"
+                  >Tableaux favoris
+                </a>
+              </li>
+              <li class="ms-4">
+                <a
+                  class="hover-link-nav dropdown-item"
+                  href="#espaceTtravilInvites"
+                  >Espaces de Travail d'invites
+                </a>
+              </li>
+            </ul>
+          </div>
           <!-- dropdown Button plus -->
           <div
-            class="dropdown"
+            class="dropdown d-md-none d-lg-none"
             id="modal-Button-plus"
             tabindex="-1"
             aria-labelledby="modal-Button-plusLabel"
@@ -47,7 +77,7 @@
           >
             <button
               type="button"
-              class="btn btn-primary text-dark border border-black dropdown-toggle"
+              class="btn btn-primary text-dark border border-black dropdown-toggle not-row"
               data-bs-toggle="dropdown"
               data-bs-target="#modal-Button-plus"
             >
@@ -121,7 +151,7 @@
                   ></button>
                 </div>
                 <div class="modal-body">
-                  <a class="hover-link" href="#"
+                  <a class="hover-link" href="projet.html"
                     >Creer un tableau <i class="bi bi-arrow-right"></i
                   ></a>
                   <p>
@@ -129,7 +159,7 @@
                     Utilisez-le pour gérer des projets, suivre les informations
                     ou organiser quoi que ce soit.
                   </p>
-                  <a class="hover-link" href=""
+                  <a class="hover-link" href="projet.html"
                     >Créer à partir du modèle <i class="bi bi-arrow-right"></i
                   ></a>
                   <p>Commencez plus rapidement avec un modèle de tableau.</p>
@@ -159,7 +189,7 @@
             </form>
           </div>
           <div class="d-flex gap-2">
-            <!-- search button -->
+            <!-- search button mobile -->
             <button
               class="btn btn-primary text-dark border border-black d-md-none d-lg-none"
               type="button"
@@ -393,44 +423,140 @@
             <div class="row row-cols-2 g-1">
               <div class="col-6">
                 <div class="m-2">
-                  <button
-                    type="button"
-                    class="rounded-4 p-2 w-100 btn-primary button-hover"
+                  <!-- dropdown Button Membres -->
+                  <div
+                    class="dropdown"
+                    id="dropdown-Button-Membres"
+                    tabindex="-1"
+                    aria-labelledby="modal-Button-plusLabel"
+                    aria-hidden="true"
                   >
-                    <i class="bi bi-people-fill"></i> Membres
-                  </button>
+                    <button
+                      type="button"
+                      class="rounded-4 p-2 w-100 btn-primary button-hover"
+                      data-bs-toggle="dropdown"
+                      data-bs-target="#dropdown-Button-Membres"
+                    >
+                      <i class="bi bi-people-fill"></i> Membres
+                    </button>
+                    <div class="dropdown w-50">
+                      <ul class="dropdown-menu p-2 mt-2">
+                        <hr
+                          class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-2"
+                        />
+                        <ul>
+                          <li>Eduardo</li>
+                          <li>Leesha</li>
+                          <li>Soren</li>
+                          <li>Nagib</li>
+                        </ul>
+                        <hr
+                          class="border border-danger rounded-1 border-2 opacity-100 mt-2 mb-1"
+                        />
+                      </ul>
+                    </div>
+                  </div>
                 </div>
                 <div class="m-2">
-                  <button
-                    type="button"
-                    class="rounded-4 p-2 w-100 btn-primary button-hover"
+                  <a href="projet.html">
+                    <button
+                      type="button"
+                      class="rounded-4 p-2 w-100 btn-primary button-hover"
+                    >
+                      <i class="bi bi-gear"></i> Réglages
+                    </button></a
                   >
-                    <i class="bi bi-gear"></i> Réglages
-                  </button>
                 </div>
               </div>
               <div class="col-6">
                 <div class="m-2">
+                  <!-- button Vues -->
                   <button
                     type="button"
                     class="rounded-4 p-2 w-100 btn-primary button-hover"
+                    data-bs-toggle="modal"
+                    data-bs-target="#button_Vues"
                   >
                     <i class="bi bi-eye"></i> Vues
                   </button>
+
+                  <!-- Modal Button vues -->
+                  <div
+                    class="modal fade"
+                    id="button_Vues"
+                    tabindex="-1"
+                    aria-labelledby="modal-Button-Vues"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog w-50">
+                      <div class="modal-content">
+                        <div class="modal-header border_b">
+                          <h5 class="modal-title" id="modal-Button-Vues">
+                            <i class="bi bi-eye"></i> Vues
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <table class="table">
+                            <thead>
+                              <tr class="border_b">
+                                <th scope="col">Carte</th>
+                                <th scope="col">Liste</th>
+                                <th scope="col">Étiquettes</th>
+                                <th scope="col">Membres</th>
+                                <th scope="col">Date d'échéance</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                              <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                              <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="modal-footer border_t"></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="m-2">
-                  <button
-                    type="button"
-                    class="rounded-4 p-2 w-100 btn-primary button-hover"
+                  <a href="Gerercompte.html">
+                    <button
+                      type="button"
+                      class="rounded-4 p-2 w-100 btn-primary button-hover"
+                    >
+                      <i class="bi bi-border-all"></i> Mise à niveau
+                    </button></a
                   >
-                    <i class="bi bi-border-all"></i> Mise à niveau
-                  </button>
                 </div>
               </div>
             </div>
           </div>
           <div>
-            <a href="newProjet.html">
+            <a href="projet.html">
               <button
                 type="button"
                 class="rounded-4 p-5 w-100 bg-body-tertiary shadow"

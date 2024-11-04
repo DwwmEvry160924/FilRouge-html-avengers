@@ -33,6 +33,10 @@ body {
   height: 80px !important;
 }
 
+.dropdown-toggle::after {
+  display:none !important;
+}
+
 /* ----------- borders ---------- */
 .border-danger {
   border: solid var(--line-bg) !important;
@@ -86,6 +90,11 @@ body {
   text-decoration: underline;
   color: var(--line-bg);
   letter-spacing: 0.3rem !important;
+}
+
+.hover-link-nav:hover {
+  text-decoration: underline;
+  color: var(--line-bg);
 }
 
 .hover-link-footer:hover {
