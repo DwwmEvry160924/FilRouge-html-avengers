@@ -277,10 +277,29 @@
       <!-- info projet -->
       <section class="row">
         <div class="row">
+          <!-- button delete - mudar e colocar o tooltips-->
+
+          <a href="">
+            <i
+              class="bi bi-trash3-fill hover-link-delete"
+              data-bs-toggle="tooltip"
+              title="Atention ! Vous allez supprimer le projet."
+            ></i>
+          </a>
+
           <div class="row mb-4">
-            <h2 class="col-4">Debug Avengers</h2>
+            <h2 class="col-4">
+              <samp
+                ><i
+                  class="bi bi-pencil-square icon-btn hover-link-delete"
+                  data-bs-toggle="tooltip"
+                  title="Changer le nom"
+                ></i
+              ></samp>
+              Debug Avengers
+            </h2>
             <!-- star -->
-            <i class="col-2 bi bi-star icon-size"></i>
+            <i class="col-2 bi bi-star"></i>
             <!-- button people -->
             <div class="w-25">
               <button
@@ -502,27 +521,188 @@
               <div
                 class="d-flex flex-column align-items-center justify-content-center w-100"
               >
-                <h3>
-                  Liste 1 <span> <i class="bi bi-three-dots"></i></span>
-                </h3>
-                <ul>
-                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
-                    Tache 1
-                  </li>
-                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
-                    Tache 2
-                  </li>
-                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
-                    Tache 3
-                  </li>
-                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
-                    Tache 4
-                  </li>
-                </ul>
+                <div class="w-25 bg-list p-2">
+                  <h3>
+                    Liste 1
+                    <span>
+                      <samp
+                        ><i
+                          class="bi bi-trash3-fill hover-link-delete size-icon-delete"
+                          data-bs-toggle="tooltip"
+                          title="Delete Liste"
+                        ></i></samp
+                    ></span>
+                  </h3>
+                  <ul>
+                    <li class="rounded-4 p-2 tache m-2 ps-5 pe-5">
+                      <a href="">
+                        <i
+                          class="bi bi-trash3-fill hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Delete tache"
+                        ></i>
+                      </a>
+                      <samp
+                        ><i
+                          class="bi bi-pencil-square icon-btn hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Modifier la tache"
+                        ></i
+                      ></samp>
 
-                <div class="add-card">
-                  <span><i class="bi bi-pencil-square"></i></span> Ajouter une
-                  carte
+                      Tache 1
+                    </li>
+
+                    <li class="rounded-4 p-2 tache m-2 ps-5 pe-5">
+                      <a href="">
+                        <i
+                          class="bi bi-trash3-fill hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Delete tache"
+                        ></i>
+                      </a>
+                      <samp
+                        ><i
+                          class="bi bi-pencil-square icon-btn hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Modifier la tache"
+                        ></i
+                      ></samp>
+
+                      Tache 2
+                    </li>
+                    <li class="rounded-4 p-2 tache m-2 ps-5 pe-5">
+                      <a href="">
+                        <i
+                          class="bi bi-trash3-fill hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Delete tache"
+                        ></i>
+                      </a>
+                      <samp
+                        ><i
+                          class="bi bi-pencil-square icon-btn hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Modifier la tache"
+                        ></i
+                      ></samp>
+
+                      Tache 3
+                    </li>
+                    <li class="rounded-4 p-2 tache m-2 ps-5 pe-5">
+                      <a href="">
+                        <i
+                          class="bi bi-trash3-fill hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Delete tache"
+                        ></i>
+                      </a>
+                      <samp
+                        ><i
+                          class="bi bi-pencil-square icon-btn hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Modifier la tache"
+                        ></i
+                      ></samp>
+
+                      Tache 4
+                    </li>
+                  </ul>
+
+                  <!-- Button Ajouter une carte -->
+                  <div class="add-card ms-3">
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-none hover-link-delete"
+                      data-bs-toggle="modal"
+                      data-bs-target="#Ajouter-carte-Modal"
+                    >
+                      <i class="bi bi-pencil-square"></i>
+                      Ajouter une carte
+                    </button>
+                  </div>
+                  <!-- Modal Ajouter une carte -->
+                  <div
+                    class="modal fade"
+                    id="Ajouter-carte-Modal"
+                    tabindex="-1"
+                    aria-labelledby="Ajouter-carte-ModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1
+                            class="modal-title fs-5"
+                            id="Ajouter-carte-ModalLabel"
+                          >
+                            <i class="bi bi-pencil-square"></i>
+                            Ajouter une carte
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <fieldset>
+                              <div class="mb-3">
+                                <label for="Nom" class="form-label"
+                                  >Nom de la Tache</label
+                                >
+                                <input
+                                  type="text"
+                                  id="Nom"
+                                  class="form-control"
+                                  placeholder="Nom"
+                                />
+                              </div>
+                              <div class="mb-3">
+                                <label for="Jour" class="form-label"
+                                  >Jour de creation</label
+                                >
+                                <input
+                                  type="date"
+                                  id="Jour"
+                                  class="form-control"
+                                  placeholder="date"
+                                />
+                              </div>
+                              <div class="mb-3">
+                                <label for="Description" class="form-label"
+                                  >Description</label
+                                >
+                                <textarea
+                                  class="form-control"
+                                  id="Description"
+                                  rows="3"
+                                ></textarea>
+                              </div>
+                            </fieldset>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            Save Tache
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -530,27 +710,186 @@
               <div
                 class="d-flex flex-column align-items-center justify-content-center w-100"
               >
-                <h3>
-                  Liste 2 <span> <i class="bi bi-three-dots"></i></span>
-                </h3>
-                <ul>
-                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
-                    Tache 1
-                  </li>
-                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
-                    Tache 2
-                  </li>
-                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
-                    Tache 3
-                  </li>
-                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
-                    Tache 4
-                  </li>
-                </ul>
+                <div class="w-25 bg-list p-2">
+                  <h3>
+                    Liste 2
+                    <span>
+                      <samp
+                        ><i
+                          class="bi bi-trash3-fill hover-link-delete size-icon-delete"
+                          data-bs-toggle="tooltip"
+                          title="Delete Liste"
+                        ></i></samp
+                    ></span>
+                  </h3>
+                  <ul>
+                    <li class="rounded-4 p-2 tache m-2 ps-5 pe-5">
+                      <a href="">
+                        <i
+                          class="bi bi-trash3-fill hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Delete tache"
+                        ></i>
+                      </a>
+                      <samp
+                        ><i
+                          class="bi bi-pencil-square icon-btn hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Modifier la tache"
+                        ></i
+                      ></samp>
 
-                <div class="add-card">
-                  <span><i class="bi bi-pencil-square"></i></span> Ajouter une
-                  carte
+                      Tache 1
+                    </li>
+                    <li class="rounded-4 p-2 tache m-2 ps-5 pe-5">
+                      <a href="">
+                        <i
+                          class="bi bi-trash3-fill hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Delete tache"
+                        ></i>
+                      </a>
+                      <samp
+                        ><i
+                          class="bi bi-pencil-square icon-btn hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Modifier la tache"
+                        ></i
+                      ></samp>
+
+                      Tache 2
+                    </li>
+                    <li class="rounded-4 p-2 tache m-2 ps-5 pe-5">
+                      <a href="">
+                        <i
+                          class="bi bi-trash3-fill hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Delete tache"
+                        ></i>
+                      </a>
+                      <samp
+                        ><i
+                          class="bi bi-pencil-square icon-btn hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Modifier la tache"
+                        ></i
+                      ></samp>
+
+                      Tache 3
+                    </li>
+                    <li class="rounded-4 p-2 tache m-2 ps-5 pe-5">
+                      <a href="">
+                        <i
+                          class="bi bi-trash3-fill hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Delete tache"
+                        ></i>
+                      </a>
+                      <samp
+                        ><i
+                          class="bi bi-pencil-square icon-btn hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Modifier la tache"
+                        ></i
+                      ></samp>
+
+                      Tache 4
+                    </li>
+                  </ul>
+                  <!-- Button Ajouter une carte -->
+                  <div class="add-card ms-3">
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-none hover-link-delete"
+                      data-bs-toggle="modal"
+                      data-bs-target="#Ajouter-carte-Modal2"
+                    >
+                      <i class="bi bi-pencil-square"></i>
+                      Ajouter une carte
+                    </button>
+                  </div>
+                  <!-- Modal Ajouter une carte -->
+                  <div
+                    class="modal fade"
+                    id="Ajouter-carte-Modal2"
+                    tabindex="-1"
+                    aria-labelledby="Ajouter-carte-ModalLabel2"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1
+                            class="modal-title fs-5"
+                            id="Ajouter-carte-ModalLabel2"
+                          >
+                            <i class="bi bi-pencil-square"></i>
+                            Ajouter une carte
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <fieldset>
+                              <div class="mb-3">
+                                <label for="Nom" class="form-label"
+                                  >Nom de la Tache</label
+                                >
+                                <input
+                                  type="text"
+                                  id="Nom"
+                                  class="form-control"
+                                  placeholder="Nom"
+                                />
+                              </div>
+                              <div class="mb-3">
+                                <label for="Jour" class="form-label"
+                                  >Jour de creation</label
+                                >
+                                <input
+                                  type="date"
+                                  id="Jour"
+                                  class="form-control"
+                                  placeholder="date"
+                                />
+                              </div>
+                              <div class="mb-3">
+                                <label for="Description" class="form-label"
+                                  >Description</label
+                                >
+                                <textarea
+                                  class="form-control"
+                                  id="Description"
+                                  rows="3"
+                                ></textarea>
+                              </div>
+                            </fieldset>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            Save Tache
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -558,27 +897,187 @@
               <div
                 class="d-flex flex-column align-items-center justify-content-center w-100"
               >
-                <h3>
-                  Liste 3 <span> <i class="bi bi-three-dots"></i></span>
-                </h3>
-                <ul>
-                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
-                    Tache 1
-                  </li>
-                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
-                    Tache 2
-                  </li>
-                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
-                    Tache 3
-                  </li>
-                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
-                    Tache 4
-                  </li>
-                </ul>
+                <div class="w-25 bg-list p-2">
+                  <h3>
+                    Liste 3
+                    <span>
+                      <samp
+                        ><i
+                          class="bi bi-trash3-fill hover-link-delete size-icon-delete"
+                          data-bs-toggle="tooltip"
+                          title="Delete Liste"
+                        ></i></samp
+                    ></span>
+                  </h3>
+                  <ul>
+                    <li class="rounded-4 p-2 tache m-2 ps-5 pe-5">
+                      <a href="">
+                        <i
+                          class="bi bi-trash3-fill hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Delete tache"
+                        ></i>
+                      </a>
+                      <samp
+                        ><i
+                          class="bi bi-pencil-square icon-btn hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Modifier la tache"
+                        ></i
+                      ></samp>
 
-                <div class="add-card">
-                  <span><i class="bi bi-pencil-square"></i></span> Ajouter une
-                  carte
+                      Tache 1
+                    </li>
+                    <li class="rounded-4 p-2 tache m-2 ps-5 pe-5">
+                      <a href="">
+                        <i
+                          class="bi bi-trash3-fill hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Delete tache"
+                        ></i>
+                      </a>
+                      <samp
+                        ><i
+                          class="bi bi-pencil-square icon-btn hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Modifier la tache"
+                        ></i
+                      ></samp>
+
+                      Tache 2
+                    </li>
+                    <li class="rounded-4 p-2 tache m-2 ps-5 pe-5">
+                      <a href="">
+                        <i
+                          class="bi bi-trash3-fill hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Delete tache"
+                        ></i>
+                      </a>
+                      <samp
+                        ><i
+                          class="bi bi-pencil-square icon-btn hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Modifier la tache"
+                        ></i
+                      ></samp>
+
+                      Tache 3
+                    </li>
+                    <li class="rounded-4 p-2 tache m-2 ps-5 pe-5">
+                      <a href="">
+                        <i
+                          class="bi bi-trash3-fill hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Delete tache"
+                        ></i>
+                      </a>
+                      <samp
+                        ><i
+                          class="bi bi-pencil-square icon-btn hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Modifier la tache"
+                        ></i
+                      ></samp>
+
+                      Tache 4
+                    </li>
+                  </ul>
+
+                  <!-- Button Ajouter une carte -->
+                  <div class="add-card ms-3">
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-none hover-link-delete"
+                      data-bs-toggle="modal"
+                      data-bs-target="#Ajouter-carte-Modal3"
+                    >
+                      <i class="bi bi-pencil-square"></i>
+                      Ajouter une carte
+                    </button>
+                  </div>
+                  <!-- Modal Ajouter une carte -->
+                  <div
+                    class="modal fade"
+                    id="Ajouter-carte-Modal3"
+                    tabindex="-1"
+                    aria-labelledby="Ajouter-carte-ModalLabel3"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1
+                            class="modal-title fs-5"
+                            id="Ajouter-carte-ModalLabel3"
+                          >
+                            <i class="bi bi-pencil-square"></i>
+                            Ajouter une carte
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <fieldset>
+                              <div class="mb-3">
+                                <label for="Nom" class="form-label"
+                                  >Nom de la Tache</label
+                                >
+                                <input
+                                  type="text"
+                                  id="Nom"
+                                  class="form-control"
+                                  placeholder="Nom"
+                                />
+                              </div>
+                              <div class="mb-3">
+                                <label for="Jour" class="form-label"
+                                  >Jour de creation</label
+                                >
+                                <input
+                                  type="date"
+                                  id="Jour"
+                                  class="form-control"
+                                  placeholder="date"
+                                />
+                              </div>
+                              <div class="mb-3">
+                                <label for="Description" class="form-label"
+                                  >Description</label
+                                >
+                                <textarea
+                                  class="form-control"
+                                  id="Description"
+                                  rows="3"
+                                ></textarea>
+                              </div>
+                            </fieldset>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            Save Tache
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -586,27 +1085,187 @@
               <div
                 class="d-flex flex-column align-items-center justify-content-center w-100"
               >
-                <h3>
-                  Liste 4 <span> <i class="bi bi-three-dots"></i></span>
-                </h3>
-                <ul>
-                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
-                    Tache 1
-                  </li>
-                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
-                    Tache 2
-                  </li>
-                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
-                    Tache 3
-                  </li>
-                  <li class="rounded-4 p-2 tache button-hover m-2 ps-5 pe-5">
-                    Tache 4
-                  </li>
-                </ul>
+                <div class="w-25 bg-list p-2">
+                  <h3>
+                    Liste 4
+                    <span>
+                      <samp
+                        ><i
+                          class="bi bi-trash3-fill hover-link-delete size-icon-delete"
+                          data-bs-toggle="tooltip"
+                          title="Delete Liste"
+                        ></i></samp
+                    ></span>
+                  </h3>
+                  <ul>
+                    <li class="rounded-4 p-2 tache m-2 ps-5 pe-5">
+                      <a href="">
+                        <i
+                          class="bi bi-trash3-fill hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Delete tache"
+                        ></i>
+                      </a>
+                      <samp
+                        ><i
+                          class="bi bi-pencil-square icon-btn hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Modifier la tache"
+                        ></i
+                      ></samp>
 
-                <div class="add-card">
-                  <span><i class="bi bi-pencil-square"></i></span> Ajouter une
-                  carte
+                      Tache 1
+                    </li>
+                    <li class="rounded-4 p-2 tache m-2 ps-5 pe-5">
+                      <a href="">
+                        <i
+                          class="bi bi-trash3-fill hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Delete tache"
+                        ></i>
+                      </a>
+                      <samp
+                        ><i
+                          class="bi bi-pencil-square icon-btn hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Modifier la tache"
+                        ></i
+                      ></samp>
+
+                      Tache 2
+                    </li>
+                    <li class="rounded-4 p-2 tache m-2 ps-5 pe-5">
+                      <a href="">
+                        <i
+                          class="bi bi-trash3-fill hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Delete tache"
+                        ></i>
+                      </a>
+                      <samp
+                        ><i
+                          class="bi bi-pencil-square icon-btn hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Modifier la tache"
+                        ></i
+                      ></samp>
+
+                      Tache 3
+                    </li>
+                    <li class="rounded-4 p-2 tache m-2 ps-5 pe-5">
+                      <a href="">
+                        <i
+                          class="bi bi-trash3-fill hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Delete tache"
+                        ></i>
+                      </a>
+                      <samp
+                        ><i
+                          class="bi bi-pencil-square icon-btn hover-link-delete"
+                          data-bs-toggle="tooltip"
+                          title="Modifier la tache"
+                        ></i
+                      ></samp>
+
+                      Tache 4
+                    </li>
+                  </ul>
+
+                  <!-- Button Ajouter une carte -->
+                  <div class="add-card ms-3">
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-none hover-link-delete"
+                      data-bs-toggle="modal"
+                      data-bs-target="#Ajouter-carte-Modal4"
+                    >
+                      <i class="bi bi-pencil-square"></i>
+                      Ajouter une carte
+                    </button>
+                  </div>
+                  <!-- Modal Ajouter une carte -->
+                  <div
+                    class="modal fade"
+                    id="Ajouter-carte-Modal4"
+                    tabindex="-1"
+                    aria-labelledby="Ajouter-carte-ModalLabel4"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1
+                            class="modal-title fs-5"
+                            id="Ajouter-carte-ModalLabel4"
+                          >
+                            <i class="bi bi-pencil-square"></i>
+                            Ajouter une carte
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <fieldset>
+                              <div class="mb-3">
+                                <label for="Nom" class="form-label"
+                                  >Nom de la Tache</label
+                                >
+                                <input
+                                  type="text"
+                                  id="Nom"
+                                  class="form-control"
+                                  placeholder="Nom"
+                                />
+                              </div>
+                              <div class="mb-3">
+                                <label for="Jour" class="form-label"
+                                  >Jour de creation</label
+                                >
+                                <input
+                                  type="date"
+                                  id="Jour"
+                                  class="form-control"
+                                  placeholder="date"
+                                />
+                              </div>
+                              <div class="mb-3">
+                                <label for="Description" class="form-label"
+                                  >Description</label
+                                >
+                                <textarea
+                                  class="form-control"
+                                  id="Description"
+                                  rows="3"
+                                ></textarea>
+                              </div>
+                            </fieldset>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            Save Tache
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1308,5 +1967,36 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var tooltipTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        );
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+      });
+    </script>
+    <script>
+      const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
+      const appendAlert = (message, type) => {
+        const wrapper = document.createElement("div");
+        wrapper.innerHTML = [
+          `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+          `   <div>${message}</div>`,
+          '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+          "</div>",
+        ].join("");
+
+        alertPlaceholder.append(wrapper);
+      };
+
+      const alertTrigger = document.getElementById("liveAlertBtn");
+      if (alertTrigger) {
+        alertTrigger.addEventListener("click", () => {
+          appendAlert("Nice, you triggered this alert message!", "success");
+        });
+      }
+    </script>
   </body>
 </html>

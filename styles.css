@@ -12,6 +12,9 @@ body{
     background-color: #658DA7
 }
 
+.icon-size-pro{
+    font-size: 3.55rem !important;
+  }
 :root {
     --line-bg: #8f0304;
     --card-bg: #c1d5db;

@@ -30,6 +30,36 @@ body {
   background-color: #fceee3 !important;
 }
 
+.icon-btn {
+  font-size: 1rem !important;
+  }
+
+.delete-project{
+  width: 1rem !important;
+}
+
+.hover-link-delete:hover {
+  text-decoration: underline;
+  color: var(--line-bg);
+  }
+
+.btn-none {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background: none !important;
+  text-decoration: none !important;
+  color: #000;
+}
+.size-icon-delete {
+  font-size: 1rem !important;
+}
+
+.bg-list {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+}
+
 /* -----------------------    chat box ---------------------- */
 
 .icon-size-chat {
