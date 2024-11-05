@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+    <title>Politique Relative Aux Cookies</title>
+</head>
+
+<body>
+    <!-- header / nav -->
+    <header class="mb-3">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a id="navbar-brand" class="navbar-brand" href="#navbar-brand">
+              <img
+                src="./Logo_TEAMBOOST__1_-removebg-preview.png"
+                alt="Logo TEAM BOOST"
+                width="50"
+                height="auto"
+                class="d-inline-block align-text-top m-none"
+              />
+            </a>
+  
+            <!-- dropdown Button plus -->
+            <div
+              class="dropdown"
+              id="modal-Button-plus"
+              tabindex="-1"
+              aria-labelledby="modal-Button-plusLabel"
+              aria-hidden="true"
+            >
+              <button
+                type="button"
+                class="btn btn-primary text-dark border border-black dropdown-toggle"
+                data-bs-toggle="dropdown"
+                data-bs-target="#modal-Button-plus"
+              >
+                Plus <i class="bi bi-arrow-down"></i>
+              </button>
+  
+              <div class="dropdown w-50">
+                <ul class="dropdown-menu p-2 mt-2">
+                  <hr
+                    class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-2"
+                  />
+                  <li>
+                    <a class="hover-link dropdown-item" href="#espaceTtravil"
+                      >Espace de travail <i class="bi bi-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="hover-link dropdown-item" href="#resseConsult"
+                      >Tableaux récents <i class="bi bi-arrow-right pe-5"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="hover-link dropdown-item" href="#TableauxFavoris"
+                      >Tableaux favoris <i class="bi bi-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="hover-link dropdown-item"
+                      href="#espaceTtravilInvites"
+                      >Espaces de Travail d'invites
+                      <i class="bi bi-arrow-right"></i
+                    ></a>
+                  </li>
+                  <hr
+                    class="border border-danger rounded-1 border-2 opacity-100 mt-2 mb-1"
+                  />
+                </ul>
+              </div>
+            </div>
+  
+            <!-- button + collapse button -->
+            <button
+              type="button"
+              class="btn btn-primary text-dark border border-black"
+              data-bs-toggle="modal"
+              data-bs-target="#button_+"
+            >
+              <i class="bi bi-plus-circle"></i>
+            </button>
+  
+            <!-- Modal Button + -->
+            <div
+              class="modal fade"
+              id="button_+"
+              tabindex="-1"
+              aria-labelledby="modal-Button-plusLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog w-50">
+                <div class="modal-content">
+                  <div class="modal-header border_b">
+                    <h5 class="modal-title" id="modal-Button-plusLabel">
+                      <i class="bi bi-plus-circle"></i>
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <a class="hover-link" href="#"
+                      >Creer un tableau <i class="bi bi-arrow-right"></i
+                    ></a>
+                    <p>
+                      Un tableau est composé de cartes triées sur des listes.
+                      Utilisez-le pour gérer des projets, suivre les informations
+                      ou organiser quoi que ce soit.
+                    </p>
+                    <a class="hover-link" href=""
+                      >Créer à partir du modèle <i class="bi bi-arrow-right"></i
+                    ></a>
+                    <p>Commencez plus rapidement avec un modèle de tableau.</p>
+                  </div>
+                  <div class="modal-footer border_t"></div>
+                </div>
+              </div>
+            </div>
+            <!-- search bar lg and md -->
+            <div
+              class="collapse navbar-collapse not-flex-grow"
+              id="navbarSupportedContent"
+            >
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn-primary text-dark border border-black rounded-1"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+            <div class="d-flex gap-2">
+              <!-- search button -->
+              <button
+                class="btn btn-primary text-dark border border-black d-md-none d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContentmobile"
+                aria-controls="navbarSupportedContentmobile"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+  
+              <!-- notification -->
+              <button
+                type="button"
+                class="btn btn-primary text-dark border border-black"
+                data-bs-toggle="modal"
+                data-bs-target="#button_notification"
+              >
+                <i class="bi bi-bell"></i>
+              </button>
+              <!-- modal notification -->
+              <div
+                class="modal fade"
+                id="button_notification"
+                tabindex="-1"
+                aria-labelledby="modal-Button-plusLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog w-50">
+                  <div class="modal-content">
+                    <div class="modal-header border_b">
+                      <h5 class="modal-title" id="modal-Button-plusLabel">
+                        Notification <i class="bi bi-bell"></i>
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="text-center opacity-50 m-3">
+                        Aucune nouvelle notification pour le moment
+                      </p>
+                    </div>
+                    <div class="modal-footer border_t"></div>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Button profile -->
+              <button
+                type="button"
+                class="btn btn-primary text-dark border border-black size"
+                data-bs-toggle="modal"
+                data-bs-target="#button_profile"
+              >
+                <i class="bi bi-person-circle"></i>
+              </button>
+              <!-- modal profile -->
+              <div
+                class="modal fade"
+                id="button_profile"
+                tabindex="-1"
+                aria-labelledby="button_profile"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog w-50">
+                  <div class="modal-content">
+                    <div class="modal-header border_b">
+                      <h5 class="modal-title" id="button_profile">COMPTE</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <a class="col-3" href="./connexion.html">
+                          <div class="text-center">
+                            <i class="bi bi-person-circle icon-size-pro"></i>
+                          </div>
+                        </a>
+                        <div class="col">
+                          <div class="row">
+                            <div class="row">Nom Prenon</div>
+                            <div class="row">@hotmail.com</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <ul>
+                          <li>
+                            <a class="hover-link" href="#">Changer le compte</a>
+                          </li>
+                          <li>
+                            <a class="hover-link" href="./Gerercompte.html"
+                              >Gérer le compte</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <hr
+                        class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-1"
+                      />
+                      <div class="mt-2">
+                        <ul>
+                          <li>
+                            <a class="hover-link" href="./Gerercompte.html"
+                              >Profil et visibilité</a
+                            >
+                          </li>
+                          <li>
+                            <a class="hover-link" href="./condiutili.html"
+                              >Conditions d'Utilisation</a
+                            >
+                          </li>
+                          <li><a class="hover-link" href="#">Thème</a></li>
+                        </ul>
+                      </div>
+                      <hr
+                        class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-1"
+                      />
+                      <a class="hover-link" href="#"
+                        ><i class="bi bi-people-fill mt-3 mb-3"></i> Créer un
+                        espace de travail</a
+                      >
+  
+                      <hr
+                        class="border border-danger rounded-1 border-2 opacity-100 mt-1 mb-1"
+                      />
+                      <button type="button" class="btn btn-danger mt-2 mb-4">
+                        Se Déconnecter
+                      </button>
+                      <div class="modal-footer border_t"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- search bar mobile -->
+        <div
+          class="collapse navbar-collapse not-flex-grow mt-3"
+          id="navbarSupportedContentmobile"
+        >
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn-primary text-dark border border-black rounded-1"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </header>
+
+<div class="container mt-5 mb-5">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            
+            <div class="p-3 mb-4 text-center" id="Titre_encadrement">
+                <h1 class="text-black">Politique relative aux cookies</h1>
+            </div>
+            
+            <div class="p-3" id="Titre_encadrement">
+                <h3 class="text-secondary">Qu'est-ce qu'un cookie ?</h3>
+            </div>
+            <p>Un cookie est un petit fichier texte stocké sur votre appareil lorsque vous visitez un site web. 
+                Il permet à notre site de reconnaître votre appareil et de mémoriser certaines informations vous concernant, 
+                comme vos préférences et votre historique de navigation.</p>
+
+            
+            <div class="p-3 mt-4" id="Titre_encadrement">
+                <h3 class="text-secondary">Comment utilisons-nous les cookies ?</h3>
+            </div>
+            <p>Nous utilisons des cookies pour plusieurs raisons :</p>
+            <ul>
+                <li>Améliorer votre expérience utilisateur en personnalisant le contenu affiché.</li>
+                <li>Analyser notre trafic pour mieux comprendre l'utilisation de notre site.</li>
+                <li>Mémoriser vos préférences et vos choix sur notre site.</li>
+                <li>Fournir des publicités adaptées à vos centres d'intérêt.</li>
+            </ul>
+
+            
+            <div class="p-3 mt-4" id="Titre_encadrement">
+                <h3 class="text-secondary">Types de cookies utilisés</h3>
+            </div>
+            <p>Nous utilisons différents types de cookies :</p>
+            <ul>
+                <li><strong>Cookies essentiels :</strong> Ces cookies sont nécessaires au bon fonctionnement de notre site.</li>
+                <li><strong>Cookies analytiques :</strong> Ces cookies nous aident à comprendre comment les visiteurs interagissent 
+                    avec notre site, en collectant des informations de manière anonyme.</li>
+                <li><strong>Cookies publicitaires :</strong> Ces cookies sont utilisés pour vous montrer des publicités pertinentes 
+                    en fonction de vos centres d'intérêt.</li>
+            </ul>
+
+            
+            <div class="p-3 mt-4" id="Titre_encadrement">
+                <h3 class="text-secondary">Comment gérer vos préférences de cookies ?</h3>
+            </div>
+            <p>Vous pouvez gérer vos préférences de cookies via les paramètres de votre navigateur. Vous pouvez également choisir 
+               de bloquer certains types de cookies, mais cela peut affecter votre expérience sur notre site.</p>
+            <p>Pour plus d'informations sur la gestion des cookies, vous pouvez consulter la documentation de votre navigateur :</p>
+            <ul>
+                <li><a href="https://support.google.com/chrome/answer/95647?hl=fr" target="_blank">Google Chrome</a></li>
+                <li><a href="https://support.mozilla.org/fr/kb/activer-desactiver-cookies" target="_blank">Mozilla Firefox</a></li>
+                <li><a href="https://support.microsoft.com/fr-fr/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank">Internet Explorer</a></li>
+                <li><a href="https://support.apple.com/fr-fr/guide/safari/sfri11471/mac" target="_blank">Safari</a></li>
+            </ul>
+
+           
+            <div class="p-3 mt-4" id="Titre_encadrement">
+                <h3 class="text-secondary">Mises à jour de la politique</h3>
+            </div>
+            <p>Nous nous réservons le droit de modifier cette politique de cookies. Les modifications seront publiées sur cette page 
+               avec une date de mise à jour.</p>
+
+            
+            <div class="text-center mt-4">
+                <button class="btn btn-primary" style="background-color: black;">Accepter tous les cookies</button>
+                <button class="btn btn-secondary">Personnaliser les cookies</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+</body>
+</html>

@@ -1,61 +1,18 @@
-body {
-    background-image: url(fondaccueil.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0;
-}
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-  .login-container {
-    max-width: 700px;
-    padding: 20px;
+body{
     background-color: #FCEEE3;
-    border-radius: 20px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .login-container img.logo {
-    width: 100px;
-    margin-bottom: 20px;
-  }
-  .btn-custom {
-    background-color: #658DA7;
-    color: #fff;
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  .btn-outline-custom {
-    border-color: #658DA7;
-    color: #333;
-    width: 100%;
-    margin-bottom: 10px;
-    font-weight: 500;
-  }
-  .btn-outline-custom:hover {
-    background-color: #658DA7;
-    color: #fff;
-  }
-  .privacy-text {
-    font-size: 0.8rem;
-    color: #666;
-    margin-top: 20px;
-  }
+    font-family: 'Poppins';
+}
 
-.logo {
-    display: block;
-    margin: auto;
-    width: 30%;
-  }
-  :root {
+#Titre_encadrement{
+    background-color: #C1D5DB
+}
+
+.fond_encadrement{
+    height: 60px; 
+    background-color: #658DA7
+}
+
+:root {
     --line-bg: #8f0304;
     --card-bg: #c1d5db;
     --button-bg: #658da7;
