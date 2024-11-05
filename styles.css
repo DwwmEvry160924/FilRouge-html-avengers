@@ -11,3 +11,7 @@ body{
     height: 60px; 
     background-color: #658DA7
 }
+
+.icon-size-pro{
+    font-size: 3.55rem !important;
+  }
