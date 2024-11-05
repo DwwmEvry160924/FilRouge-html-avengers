@@ -51,6 +51,14 @@ body {
   text-decoration: none !important;
   color: #000;
 }
+.size-icon-delete {
+  font-size: 1rem !important;
+}
+
+.bg-list {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+}
 
 /* -----------------------    chat box ---------------------- */
 
