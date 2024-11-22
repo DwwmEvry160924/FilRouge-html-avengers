@@ -106,3 +106,10 @@ input:focus {
 .barra-3 {
   fill: green;
 }
+
+.mt-footer {
+  position: fixed !important; 
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+}
