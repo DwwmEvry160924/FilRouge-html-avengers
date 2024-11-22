@@ -17,6 +17,8 @@ btn_creer.addEventListener("click", (e) => {
     console.log("il y  erreur dans le formulaire");
   } else {
     console.log("ok, tudo certo ahahahaha");
+    alert(`Le projet ${input_nom.value} a bien ete cree`);
+    window.location.href = "projet.html";
   }
 });
 function validateForm() {
