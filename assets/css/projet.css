@@ -108,8 +108,15 @@ input:focus {
 }
 
 .mt-footer {
-  position: fixed !important; 
   bottom: 0 !important;
   left: 0 !important;
   right: 0 !important;
+}
+
+
+
+
+.btn-favo{
+  background-color: yellow !important;
+  border-radius: 50% !important;
 }
