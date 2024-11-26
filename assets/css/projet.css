@@ -58,6 +58,8 @@ body {
 .bg-list {
   background-color: var(--card-bg);
   border-radius: 10px;
+  width: 80% !important;
+  padding: 1rem !important;
 }
 
 /* -----------------------    chat box ---------------------- */
@@ -114,9 +116,23 @@ input:focus {
 }
 
 
-
-
 .btn-favo{
   background-color: yellow !important;
   border-radius: 50% !important;
+}
+#tema{
+  display: inline-block !important;
+}
+
+.img-tema{
+  margin: 2rem !important;
+  width: 25rem !important;
+  height: 15rem !important;
+  border-radius: 2rem !important;
+display: block;
+}
+
+#description{
+  margin: 2rem !important;
+  padding: 2rem !important;
 }

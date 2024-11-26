@@ -53,7 +53,7 @@ btn_creer.addEventListener("click", (e) => {
     });
 
     list_json.push({
-      id: list_json.length + 1,
+      id: Math.random(),
       nom: input_nom.value,
       image: image.value, // to get the image do pro
       "date de fin": date_Fin.value,
@@ -148,3 +148,8 @@ dateInput.setAttribute("min", today); // to block the date before today
 dateInput.addEventListener("keypress", function (e) {
   e.preventDefault(); //to block the enter user
 });
+
+
+
+
+console.log((Math.random()))
