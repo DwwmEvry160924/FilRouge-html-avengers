@@ -1,93 +1,146 @@
 body{
-    background-color: #FCEEE3;
-    font-family: 'Poppins';
+  background-color: #FCEEE3;
+  font-family: 'Poppins';
 }
 
 #Titre_encadrement{
-    background-color: #C1D5DB
+  background-color: #C1D5DB
+}
+
+#Titre_encadrement1{
+  background-color: #C1D5DB
 }
 
 .fond_encadrement{
-    height: 60px; 
-    background-color: #658DA7
+  height: 60px; 
+  background-color: #658DA7
 }
 
 .icon-size-pro{
-    font-size: 3.55rem !important;
-  }
+  font-size: 3.55rem !important;
+}
 :root {
-    --line-bg: #8f0304;
-    --card-bg: #c1d5db;
-    --button-bg: #658da7;
-    --overlay-bg: #d9d9d9;
-    --shadow: #000000;
-  }
-  
-  a {
-    text-decoration: none;
-    color:  var(--shadow);
-  }
-  .icon-size-pro{
-    font-size: 3rem !important;
-  }
+  --line-bg: #8f0304;
+  --card-bg: #c1d5db;
+  --button-bg: #658da7;
+  --overlay-bg: #d9d9d9;
+  --shadow: #000000;
+}
 
-  /* ----------- nav, responsve ---------- */
-  
-  .not-flex-grow{
-    flex-grow: 0 !important;
-  }
-  
-  
-  body {
-    font-family: poppins;
-    background-color: #FCEEE3;
-  }
-  
-  /* ----------- borders ---------- */
-  .border-danger {
-    border: solid var(--line-bg) !important;
-  }
-  
-  .border_t {
-    border-top: solid var(--line-bg) !important;
-  }
-  .border_b {
-    border-bottom: solid var(--line-bg) !important;
-  }
-  /* ---------------------- */
-  
-  .bg-body-tertiary {
-    background-color: var(--button-bg) !important;
-  }
-  
-  .btn-primary {
-    background-color: var(--card-bg) !important;
-  }
-  
-  .overlay-bg {
-    background-color: var(--overlay-bg) !important;
-  }
-  
-  /* ----------- hovers ---------- */
-  
-  
-  .button-hover:hover {
-    letter-spacing: 0.3rem !important;
-    border: solid var(--line-bg) !important;
-    text-decoration: underline;
-  }
-  
-  .shadow:hover {
-    box-shadow: 0px 0px 10px 0px var(--shadow) !important;
-  }
-  
-  .card-hover:hover {
-    box-shadow: 0px 0px 10px 0px var(--shadow) !important;
-    cursor: pointer;
-  }
-  .hover-link:hover {
-    text-decoration: underline;
-    color: var(--line-bg);
-    letter-spacing: 0.3rem !important;
-  }
-  
+a {
+  text-decoration: none;
+  color:  var(--shadow);
+}
+.icon-size-pro{
+  font-size: 3rem !important;
+}
+
+/* ----------- nav, responsve ---------- */
+
+.not-flex-grow{
+  flex-grow: 0 !important;
+}
+
+
+body {
+  font-family: poppins;
+  background-color: #FCEEE3;
+}
+
+/* ----------- borders ---------- */
+.border-danger {
+  border: solid var(--line-bg) !important;
+}
+
+.border_t {
+  border-top: solid var(--line-bg) !important;
+}
+.border_b {
+  border-bottom: solid var(--line-bg) !important;
+}
+/* ---------------------- */
+
+.bg-body-tertiary {
+  background-color: var(--button-bg) !important;
+}
+
+.btn-primary {
+  background-color: var(--card-bg) !important;
+}
+
+.overlay-bg {
+  background-color: var(--overlay-bg) !important;
+}
+
+/* ----------- hovers ---------- */
+
+
+.button-hover:hover {
+  letter-spacing: 0.3rem !important;
+  border: solid var(--line-bg) !important;
+  text-decoration: underline;
+}
+
+.shadow:hover {
+  box-shadow: 0px 0px 10px 0px var(--shadow) !important;
+}
+
+.card-hover:hover {
+  box-shadow: 0px 0px 10px 0px var(--shadow) !important;
+  cursor: pointer;
+}
+.hover-link:hover {
+  text-decoration: underline;
+  color: var(--line-bg);
+  letter-spacing: 0.3rem !important;
+}
+
+
+/* Ajustements pour les champs d'édition */
+.form-control-sm {
+width: 70%; /* Ajustez selon vos besoins */
+}
+
+#positionBouton {
+top: -2cm;
+}
+
+#photoProfil {
+  top: -2cm
+}
+
+
+
+
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
