@@ -152,4 +152,19 @@ function delete_from_fermes() {
 }
 
 
+let retur_top = document.getElementById("retur-top");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    retur_top.style.display = "block";
+  } else {
+    retur_top.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 
