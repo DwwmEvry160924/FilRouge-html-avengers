@@ -6,7 +6,7 @@
   --shadow: #000000;
 }
 body {
-  background-image: url(fondaccueil.jpg) !important;
+  background-image: url(../img/fondaccueil.jpg) !important;
   background-size: cover  !important;
   width: 100% !important;
   height: auto !important;
