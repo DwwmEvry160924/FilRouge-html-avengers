@@ -273,22 +273,30 @@
         </form>
       </div>
     </header>
-    <main class="container">
+    <!-- ima du projet -->
+     <div class="row">
+    <div class="col-3">
+      <div id="tema" ></div>
+      <div id="description"></div>
+    </div>
+    
+    <main class="container col">
       <!-- info projet -->
       <section class="row">
         <div class="row">
           <!-- button delete - mudar e colocar o tooltips-->
 
-          <a href="">
+          <a>
             <i
               class="bi bi-trash3-fill hover-link-delete"
               data-bs-toggle="tooltip"
               title="Atention ! Vous allez supprimer le projet."
+              id="btn_delete"
             ></i>
           </a>
 
           <div class="row mb-4">
-            <h2 class="col-4">
+            <h2 class="col-4" id="title">
               <samp
                 ><i
                   class="bi bi-pencil-square icon-btn hover-link-delete"
@@ -299,7 +307,16 @@
               Debug Avengers
             </h2>
             <!-- star -->
-            <i class="col-2 bi bi-star"></i>
+            <div class="w-25">
+              <button
+                id="btn-favorites"
+                type="button"
+                class="rounded-4 btn-primary button-hover dropdown-toggle dropdown"
+              >
+                <i class="col-2 bi bi-star"></i>
+              </button>
+            </div>
+
             <!-- button people -->
             <div class="w-25">
               <button
@@ -311,15 +328,8 @@
                 <i class="col-2 bi bi-people icon-size"></i>
               </button>
 
-              <ul class="dropdown-menu w-25 mt-2">
+              <ul id="list-membres" class="dropdown-menu w-25 mt-2">
                 <h4 class="text-center">Membres :</h4>
-                <li class="text-center hover-link m-1">Prénom Nom</li>
-                <li class="text-center hover-link m-1">Prénom Nom</li>
-                <li class="text-center hover-link m-1">Prénom Nom</li>
-                <li class="text-center hover-link m-1">Prénom Nom</li>
-                <li class="text-center hover-link m-1">Prénom Nom</li>
-                <li class="text-center hover-link m-1">Prénom Nom</li>
-                <li class="text-center hover-link m-1">Prénom Nom</li>
               </ul>
             </div>
             <!-- button people gear -->
@@ -336,14 +346,8 @@
               <ul class="dropdown-menu w-25 mt-2">
                 <h3 class="ms-2">Rôles :</h3>
                 <h4 class="text-center">Administrateur :</h4>
-                <li class="text-center hover-link m-1">Prénom Nom</li>
-                <h4 class="text-center m-2">Développeur :</h4>
-                <li class="text-center hover-link m-1">Prénom Nom</li>
-                <li class="text-center hover-link m-1">Prénom Nom</li>
-                <li class="text-center hover-link m-1">Prénom Nom</li>
-                <li class="text-center hover-link m-1">Prénom Nom</li>
-                <li class="text-center hover-link m-1">Prénom Nom</li>
-                <li class="text-center hover-link m-1">Prénom Nom</li>
+                <li id="admin" class="text-center hover-link m-1">Prénom Nom</li>
+              
               </ul>
             </div>
           </div>
@@ -533,7 +537,7 @@
                         ></i></samp
                     ></span>
                   </h3>
-                  <ul>
+                  <ul id="list-1">
                     <li class="rounded-4 p-2 tache m-2 ps-5 pe-5">
                       <a href="">
                         <i
@@ -663,6 +667,17 @@
                               <div class="mb-3">
                                 <label for="Jour" class="form-label"
                                   >Jour de creation</label
+                                >
+                                <input
+                                  type="date"
+                                  id="Jour"
+                                  class="form-control"
+                                  placeholder="date"
+                                />
+                              </div>
+                              <div class="mb-3">
+                                <label for="Jour" class="form-label"
+                                  >Jour de expiration</label
                                 >
                                 <input
                                   type="date"
@@ -897,7 +912,7 @@
               <div
                 class="d-flex flex-column align-items-center justify-content-center w-100"
               >
-                <div class=" bg-list p-2">
+                <div class="bg-list p-2">
                   <h3>
                     Liste 3
                     <span>
@@ -1085,7 +1100,7 @@
               <div
                 class="d-flex flex-column align-items-center justify-content-center w-100"
               >
-                <div class=" bg-list p-2">
+                <div class="bg-list p-2">
                   <h3>
                     Liste 4
                     <span>
@@ -1773,6 +1788,8 @@
         </div>
       </section>
     </main>
+  </div>
+
     <!-- graphics -->
     <section class="row ms-3 d-none d-lg-block">
       <div class="row mt-4">
@@ -1998,5 +2015,6 @@
         });
       }
     </script>
+    <script src="../assets/js/projet.js"></script>
   </body>
 </html>

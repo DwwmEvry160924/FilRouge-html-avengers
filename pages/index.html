@@ -18,13 +18,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
-    
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-
     <!-- header / nav -->
     <header class="mb-3">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -376,40 +374,10 @@
           <div class="row">
             <div class="row g-2">
               <div class="col d-lg-flex d-md-flex">
-                <div class="card text-bg-dark m-2 mb-4">
-                  <a href="projet.html">
-                    <img
-                      src="../assets/img/projet_1.png"
-                      class="card-img card-hover"
-                      alt="image projet 1"
-                  /></a>
-                </div>
-                <div class="card m-2 bg-lg-primary">
-                  <a href="projet.html"
-                    ><img
-                      src="../assets/img/projet_1.png"
-                      class="card-img card-hover"
-                      alt="image projet 1"
-                  /></a>
-                </div>
-              </div>
-              <div class="col d-lg-flex d-md-flex">
-                <div class="card text-bg-dark m-2 mb-4">
-                  <a href="projet.html">
-                    <img
-                      src="../assets/img/projet_1.png"
-                      class="card-img card-hover"
-                      alt="image projet 1"
-                  /></a>
-                </div>
-                <div class="card m-2 bg-lg-primary">
-                  <a href="projet.html"
-                    ><img
-                      src="../assets/img/projet_1.png"
-                      class="card-img card-hover"
-                      alt="image projet 1"
-                  /></a>
-                </div>
+                <div
+                  id="projets_consult"
+                  class="col d-lg-flex d-md-flex card-grid"
+                ></div>
               </div>
             </div>
           </div>
@@ -585,40 +553,10 @@
           <div class="row">
             <div class="row g-2">
               <div class="col d-lg-flex d-md-flex">
-                <div class="card text-bg-dark m-2 mb-4">
-                  <a href="projet.html">
-                    <img
-                      src="../assets/img/projet_1.png"
-                      class="card-img card-hover"
-                      alt="image projet 1"
-                  /></a>
-                </div>
-                <div class="card m-2 bg-lg-primary">
-                  <a href="projet.html"
-                    ><img
-                      src="../assets/img/projet_1.png"
-                      class="card-img card-hover"
-                      alt="image projet 1"
-                  /></a>
-                </div>
-              </div>
-              <div class="col d-lg-flex d-md-flex">
-                <div class="card text-bg-dark m-2 mb-4">
-                  <a href="projet.html">
-                    <img
-                      src="../assets/img/projet_1.png"
-                      class="card-img card-hover"
-                      alt="image projet 1"
-                  /></a>
-                </div>
-                <div class="card m-2 bg-lg-primary">
-                  <a href="projet.html"
-                    ><img
-                      src="../assets/img/projet_1.png"
-                      class="card-img card-hover"
-                      alt="image projet 1"
-                  /></a>
-                </div>
+                <div
+                  id="projets_favorites"
+                  class="col d-lg-flex d-md-flex card-grid"
+                ></div>
               </div>
             </div>
           </div>
@@ -640,7 +578,11 @@
         </div>
         <div class="col-6 p-lg-4 p-md-4">
           <div class="card text-bg-dark m-2 card-hover">
-            <img src="../assets/img/projet_1.png" class="card-img" alt="image projet 1" />
+            <img
+              src="../assets/img/projet_1.png"
+              class="card-img"
+              alt="image projet 1"
+            />
           </div>
         </div>
         <div class="m-2 mb-5">
@@ -675,53 +617,7 @@
                     aria-label="Close"
                   ></button>
                 </div>
-                <div class="row justify-content-center modal-body">
-                  <div class="col-8">
-                    <div class="card text-bg-dark m-2 card-hover">
-                      <img
-                        src="../assets/img/projet_1.png"
-                        class="card-img"
-                        alt="image projet 1"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-8">
-                    <div class="card text-bg-dark m-2 card-hover">
-                      <img
-                        src="../assets/img/projet_1.png"
-                        class="card-img"
-                        alt="image projet 1"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-8">
-                    <div class="card text-bg-dark m-2 card-hover">
-                      <img
-                        src="../assets/img/projet_1.png"
-                        class="card-img"
-                        alt="image projet 1"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-8">
-                    <div class="card text-bg-dark m-2 card-hover">
-                      <img
-                        src="../assets/img/projet_1.png"
-                        class="card-img"
-                        alt="image projet 1"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-8">
-                    <div class="card text-bg-dark m-2 card-hover">
-                      <img
-                        src="../assets/img/projet_1.png"
-                        class="card-img"
-                        alt="image projet 1"
-                      />
-                    </div>
-                  </div>
-                </div>
+                <div id="tab-closed" class="row justify-content-center modal-body"></div>
                 <div class="modal-footer border_t"></div>
               </div>
             </div>
@@ -927,5 +823,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="../assets/js/script.js"></script>
   </body>
 </html>

@@ -226,13 +226,14 @@
         </form>
       </div>
     </header>
-    <main class="container w-50">
+    <!-- form new project -->
+    <main class="container w-lg-50 w-mb-50 bg-light p-3 bg-lg-none bg-mb-none ">
       <h1 class="text-center">Nouveau Projet</h1>
       <div class="row m-5">
         <div class="mb-3">
           <label for="Non" class="form-label">Non du Projet</label>
           <input type="text" class="form-control" id="Nom" />
-          <p id="valid-Non" class="valid-submit" style="color: red; font-size: 0.9em; display: none;">*** Ajoutez un nom ***</p>
+          <p id="valid-Non" class="valid-submit m-0 p-0" style="color: red; font-size: 0.9em; display: none;">*** Ajoutez un nom ***</p>
 
         </div>
         <hr class="border border-danger rounded-1 opacity-100 mt-4 mb-4" />
@@ -244,8 +245,12 @@
           <div class="col-3">
             <label for="Date" class="form-label">Date fin</label>
             <input type="date" class="form-control"  id="Date-fin" />
-            <p id="valid-Date" class="valid-submit" style="color: red; font-size: 0.9em; display: none;">*** Ajoutez une date ***</p>
+            <p id="valid-Date" class="valid-submit m-0 p-0" style="color: red; font-size: 0.9em; display: none;">*** Ajoutez une date ***</p>
           </div>
+          <div class="col-3">
+            <label for="Duree" class="form-label">url IMG</label>
+            <input type="img" class="form-control" id="img" />
+            </div>
         </div>
         <div class="mb-3 mt-3">
           <label for="Description" class="form-label">Description</label>
@@ -255,7 +260,7 @@
             class="form-control"
             id="Description"
           ></textarea>
-          <p id="valid-Description" class="valid-submit" style="color: red; font-size: 0.9em; display: none;">*** Ajoutez la description ***</p>
+          <p id="valid-Description" class="valid-submit m-0 p-0" style="color: red; font-size: 0.9em; display: none;">*** Ajoutez la description ***</p>
         </div>
         <label for="Description" class="form-label">Chef de projet</label>
 
@@ -270,7 +275,7 @@
           <option value="Nagib">Nagib</option>
           <option value="Leesha">Leesha</option>
         </select>
-        <p id="valid-Chef" class="valid-submit" style="color: red; font-size: 0.9em; display: none;">*** choisissez le Chef de projet ***</p>
+        <p id="valid-Chef" class="valid-submit m-0 p-0" style="color: red; font-size: 0.9em; display: none;">*** choisissez le Chef de projet ***</p>
         <hr class="border border-danger rounded-1 opacity-100 mt-4 mb-4" />
         <div class="mt-3 mb-3">
           <h5>Select Membres</h5>
@@ -311,12 +316,12 @@
             <label class="form-check-label" for="flexCheck-4"> Leesha </label>
           </div>
         </div>
-        <p id="valid-membre" class="valid-submit" style="color: red; font-size: 0.9em; display: none;">*** Il faut choisir au moins un membre ***</p>
+        <p id="valid-membre" class="valid-submit m-0 p-0" style="color: red; font-size: 0.9em; display: none;">*** Il faut choisir au moins un membre ***</p>
 
         <button
           id="btn-creer"
           
-          class="btn btn-primary hover-link-footer text-dark"
+          class="btn btn-primary hover-link-footer text-dark mb-5"
         >
           Créer
         </button>
@@ -375,3 +380,6 @@
     <script src="../assets/js/newProject.js"></script>
   </body>
 </html>
+
+
+
