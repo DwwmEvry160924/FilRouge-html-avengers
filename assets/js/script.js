@@ -1,4 +1,4 @@
-const put_card = document.getElementById("projets_consult");
+const put_card = document.getElementById("projets_consult");// to get the div for to put the card
 // projects_testes = [
 //   {
 //     "id": 1,
@@ -57,12 +57,12 @@ const put_card = document.getElementById("projets_consult");
 // ]
 // localStorage.setItem("projects", JSON.stringify(projects_testes));
 
-list_json = JSON.parse(localStorage.getItem("projects"))|| [];
+list_json = JSON.parse(localStorage.getItem("projects"))|| []; // to get the list of projects in the local storage
 
-list_json.forEach((projet) => {
+list_json.forEach((projet) => { // to put the each project in the page with code html
   image = projet.image;
   projet_card = ` 
-                <div id="${projet.id}" class="card text-bg-dark m-2 mb-4 card-img-project projet
+                <div id="${projet.id}" class="card text-bg-dark m-2 mb-4 card-img-project projet 
                 ">
                  <a href="projet.html">
                     <img
@@ -73,11 +73,11 @@ list_json.forEach((projet) => {
                 </div>
               
     `;
-  put_card.insertAdjacentHTML("beforeend", projet_card);
+  put_card.insertAdjacentHTML("beforeend", projet_card); // function to put the projects in the page, with the position
 });
 // --------------------- go to page projet ---------------------
 
-let projects = document.querySelectorAll(".projet");
+let projects = document.querySelectorAll(".projet"); // to get the projects
 projects.forEach((element) => {
   element.onclick = () => {
     console.log(element.id);
